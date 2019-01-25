@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="89">
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Attenuations\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Audio Devices\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Control Surface Sessions\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Conversion Settings\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1544886680" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Effects\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Effects\Factory Effects.wwu" DateLow="1544886680" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Events\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Game Parameters\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Mixing Sessions\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Modulators\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Presets\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Queries\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Queries\Factory Queries.wwu" DateLow="1544886680" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\SoundBanks\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\States\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Switches\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Triggers\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\Virtual Acoustics\Default Work Unit.wwu" DateLow="1548452657" DateHigh="0"/>
+	<ValidationCacheItem File="D:\RepoWwise\Wwise_Fire\WwiseFire\WwiseFire.wproj" DateLow="1548452657" DateHigh="0"/>
+</ValidationCache>
