@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}" SchemaVersion="89">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="VentValue" ID="{B742006F-D7A9-4261-AC73-EACAF40E9B4A}"/>
+				<GameParameter Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
