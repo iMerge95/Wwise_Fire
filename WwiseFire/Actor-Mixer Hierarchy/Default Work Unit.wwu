@@ -2579,6 +2579,134 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="BrasierOut" ID="{12BE7E7B-5E9D-4D4F-8668-5F2A9D3CCAFF}" ShortID="1016921538">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kahi_FireBrasier_Out1" ID="{DE619AAA-07D7-4585-8EF1-A49A905B0612}" ShortID="1038310924">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireBrasier_Out1" ID="{EDF27CAC-24BC-4E51-BDFB-EF235A2FD092}" ShortID="537067714">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireBrasier_Out1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireBrasier_Out1" ID="{EDF27CAC-24BC-4E51-BDFB-EF235A2FD092}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_FireBrasier_Out2" ID="{8F3B3152-485E-4119-902F-3A81751D8AEB}" ShortID="26760026">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireBrasier_Out2" ID="{2469E830-1EB2-4E39-A6B7-9ACDD6E07581}" ShortID="176813351">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireBrasier_Out2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireBrasier_Out2" ID="{2469E830-1EB2-4E39-A6B7-9ACDD6E07581}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_FireBrasier_Out3" ID="{FF70754E-380C-484A-BBFB-41BD92C12929}" ShortID="784026849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireBrasier_Out3" ID="{2B8B2D64-D541-4829-A0AF-DBAEEA7E9895}" ShortID="316232551">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireBrasier_Out3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireBrasier_Out3" ID="{2B8B2D64-D541-4829-A0AF-DBAEEA7E9895}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Kahi_Gele" ID="{FF786A4F-0B5E-4799-862B-22F812D37E17}" ShortID="486030595">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0C7DFEE9-8C40-4BA7-B367-8E5CDFE3BD71}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1AF20238-6830-42FA-8445-6F6A5AFEAF9E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{78878AEF-4E08-4833-A994-ED8A380A24BA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Kahi_Gele" ID="{EF083CAD-2A77-474F-B454-9567B11BFECC}" ShortID="722449890">
+									<Language>SFX</Language>
+									<AudioFile>Kahi_Gele.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Kahi_Gele" ID="{EF083CAD-2A77-474F-B454-9567B11BFECC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

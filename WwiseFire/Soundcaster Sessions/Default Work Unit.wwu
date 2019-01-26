@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{903D71FB-1548-4F31-BC94-3B57A3091CEC}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Arbre" ID="{25924B03-62B8-4340-8093-316066DAF60F}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}"/>
+							<ObjectRef Name="Play_Wood" ID="{25924B03-62B8-4340-8093-316066DAF60F}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>

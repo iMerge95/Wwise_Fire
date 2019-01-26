@@ -87,7 +87,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Arbre" ID="{25924B03-62B8-4340-8093-316066DAF60F}">
+				<Event Name="Play_Wood" ID="{25924B03-62B8-4340-8093-316066DAF60F}">
 					<ChildrenList>
 						<Action Name="" ID="{15530AB3-8980-4495-BA03-123B2293D6A5}" ShortID="899727718">
 							<PropertyList>
@@ -138,6 +138,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Snow" ID="{7FCF4ADC-EC32-4530-8584-ECA39630DE3B}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_BrasierOut" ID="{A662145B-DEE0-4F97-B85F-72599EA4FEA8}">
+					<ChildrenList>
+						<Action Name="" ID="{0B3246F8-4C12-4793-A7CF-E003F742E417}" ShortID="952862080">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BrasierOut" ID="{12BE7E7B-5E9D-4D4F-8668-5F2A9D3CCAFF}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ice" ID="{0FD2B718-08FA-489A-94F3-340BAFF39B57}">
+					<ChildrenList>
+						<Action Name="" ID="{51F76942-0F7F-49BC-A4C4-2B0DA14AD709}" ShortID="1041428642">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kahi_Gele" ID="{FF786A4F-0B5E-4799-862B-22F812D37E17}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
