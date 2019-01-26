@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Amb" ID="{8B9D80C3-2BEB-4A04-9A6B-9D7FEE3B6FA7}">
+					<ChildrenList>
+						<Action Name="" ID="{3119CB67-718A-4E48-AA19-59F62E138734}" ShortID="338933955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance" ID="{33225206-4B8C-48C6-8FAF-0C1C372B30B8}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Fire" ID="{D1085641-F6D3-4781-AB8B-351793A8EA59}">
+					<ChildrenList>
+						<Action Name="" ID="{307952FC-7E9F-4AE1-8EC6-FE517E77B02F}" ShortID="964020889">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FoyerFire" ID="{8698E647-05B1-4FBF-BDC6-EE4BF81AB866}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Amb" ID="{5F64ABF5-50BA-448A-8DBD-69CEFC357638}">
+					<ChildrenList>
+						<Action Name="" ID="{9C8D920A-460D-4BF6-B520-17E57AC8A26C}" ShortID="1009944398">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance" ID="{33225206-4B8C-48C6-8FAF-0C1C372B30B8}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Fire" ID="{278C210C-7336-41A7-B1BB-F009793F732A}">
+					<ChildrenList>
+						<Action Name="" ID="{251A2049-C7A5-4177-B401-673A3D861FD1}" ShortID="103859585">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FoyerFire" ID="{8698E647-05B1-4FBF-BDC6-EE4BF81AB866}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PickWood" ID="{A0E328F6-3CDF-4655-956E-AA5FB9BF1AAE}">
+					<ChildrenList>
+						<Action Name="" ID="{4E8661D8-E0A7-4CE2-BEAD-916DF68D6E94}" ShortID="188130107">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupWood" ID="{0A5ABDFD-5B51-463A-9F73-A8F020E064FF}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PickTorch" ID="{82C97960-DB70-41FE-9502-F1CF2C8FCD10}">
+					<ChildrenList>
+						<Action Name="" ID="{34952E59-8874-4304-9AEF-76F1B427956E}" ShortID="67855044">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupTorch" ID="{D22911BF-6321-4862-B0C3-5F1A7480CBFC}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Arbre" ID="{25924B03-62B8-4340-8093-316066DAF60F}">
+					<ChildrenList>
+						<Action Name="" ID="{15530AB3-8980-4495-BA03-123B2293D6A5}" ShortID="899727718">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoupeArbre" ID="{CF5A8EB6-A7DB-4B12-AAE4-9E6B52EF8AB3}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RefillFire" ID="{B2DDCAB0-0A5D-4EF3-8F32-298484CF5D27}">
+					<ChildrenList>
+						<Action Name="" ID="{056F2E68-DE3E-4028-ABF1-0DD573193EEB}" ShortID="372455799">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RefillFoyer" ID="{03283C61-C52E-4FCA-88A9-3CE67E15B72E}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RefillBrasier" ID="{D836E8AF-7380-4B47-B86A-43CD84B0CFEA}">
+					<ChildrenList>
+						<Action Name="" ID="{076DD322-6EDE-434C-8D41-6C453950ECC4}" ShortID="449162011">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RefillBrasier" ID="{CB4839EA-68FC-454A-8DC2-8F9257CD386F}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footstep" ID="{F0431A2B-2D13-44F8-8D90-2CAB71B0B368}">
+					<ChildrenList>
+						<Action Name="" ID="{F2E9E43F-2A4F-4C7D-9778-34E8F44A2B59}" ShortID="904061364">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Snow" ID="{7FCF4ADC-EC32-4530-8584-ECA39630DE3B}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

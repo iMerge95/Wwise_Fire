@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0797DA51-5C96-45F8-94FC-96F7E5B50AA8}" SchemaVersion="89">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0797DA51-5C96-45F8-94FC-96F7E5B50AA8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0797DA51-5C96-45F8-94FC-96F7E5B50AA8}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="New Mixing Session" ID="{CA43B088-3FC2-46E6-84CF-385AAB9BAF3D}">
+					<ObjectList>
+						<ObjectRef Name="CoupeArbre" ID="{CF5A8EB6-A7DB-4B12-AAE4-9E6B52EF8AB3}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="PickupTorch" ID="{D22911BF-6321-4862-B0C3-5F1A7480CBFC}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="PickupWood" ID="{0A5ABDFD-5B51-463A-9F73-A8F020E064FF}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="RefillBrasier" ID="{CB4839EA-68FC-454A-8DC2-8F9257CD386F}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="RefillFoyer" ID="{03283C61-C52E-4FCA-88A9-3CE67E15B72E}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="Snow" ID="{7FCF4ADC-EC32-4530-8584-ECA39630DE3B}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="Ambiance" ID="{33225206-4B8C-48C6-8FAF-0C1C372B30B8}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="VentFort" ID="{EBA0CB94-0897-4E1D-9833-4376552A234B}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+						<ObjectRef Name="FoyerFire" ID="{8698E647-05B1-4FBF-BDC6-EE4BF81AB866}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

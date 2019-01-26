@@ -3,8 +3,13 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="VentValue" ID="{B742006F-D7A9-4261-AC73-EACAF40E9B4A}"/>
-				<GameParameter Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}"/>
+				<GameParameter Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}">
+					<PropertyList>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="10"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
