@@ -171,6 +171,76 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PNJ_PickWood" ID="{69127423-8F46-49AA-B6E5-4DF317B3DB7D}">
+					<ChildrenList>
+						<Action Name="" ID="{FA6895DA-D591-45CE-8D47-64B183916526}" ShortID="598368195">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PickupWood" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PNJ_Wood" ID="{836B5A6C-09BE-40D2-87D5-A47EA1BD2017}">
+					<ChildrenList>
+						<Action Name="" ID="{A0F00605-7361-40BF-857F-0BDAF048005B}" ShortID="846020976">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoupeArbre" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PNJ_Footstep" ID="{2ECF5D4A-D655-45CC-A8E5-AABF7A8F1558}">
+					<ChildrenList>
+						<Action Name="" ID="{2CDBCA9E-B145-49D8-88CF-F088D916F0A6}" ShortID="1018961847">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Snow" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PNJ_RefillFire" ID="{B9372AED-BA26-468C-A5EC-9D13B564D10C}">
+					<ChildrenList>
+						<Action Name="" ID="{CFE777F9-6A0D-45D1-AD61-4754CB83853E}" ShortID="553937800">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RefillFoyer" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music" ID="{0217469F-C139-4A28-BF0E-40DB7C8AEC69}">
+					<ChildrenList>
+						<Action Name="" ID="{CC453AC0-7C38-487A-908E-C5F4F7B55336}" ShortID="927753766">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2D011CB9-9950-4F1C-9833-9FF5E51681A1}" WorkUnitID="{738BC444-E379-4D75-BBAC-0FC71496E55C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

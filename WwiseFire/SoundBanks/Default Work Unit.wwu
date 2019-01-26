@@ -5,15 +5,20 @@
 			<ChildrenList>
 				<SoundBank Name="Main_Bank" ID="{DC6E846A-A692-47E3-B580-98B8C22F81EF}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_PNJ_Wood" ID="{836B5A6C-09BE-40D2-87D5-A47EA1BD2017}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Fire" ID="{278C210C-7336-41A7-B1BB-F009793F732A}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PickTorch" ID="{82C97960-DB70-41FE-9502-F1CF2C8FCD10}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Wood" ID="{25924B03-62B8-4340-8093-316066DAF60F}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Amb" ID="{5F64ABF5-50BA-448A-8DBD-69CEFC357638}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Footstep" ID="{F0431A2B-2D13-44F8-8D90-2CAB71B0B368}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PNJ_Footstep" ID="{2ECF5D4A-D655-45CC-A8E5-AABF7A8F1558}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PickWood" ID="{A0E328F6-3CDF-4655-956E-AA5FB9BF1AAE}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PNJ_RefillFire" ID="{B9372AED-BA26-468C-A5EC-9D13B564D10C}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Fire" ID="{D1085641-F6D3-4781-AB8B-351793A8EA59}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ice" ID="{0FD2B718-08FA-489A-94F3-340BAFF39B57}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_PNJ_PickWood" ID="{69127423-8F46-49AA-B6E5-4DF317B3DB7D}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Amb" ID="{8B9D80C3-2BEB-4A04-9A6B-9D7FEE3B6FA7}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{0217469F-C139-4A28-BF0E-40DB7C8AEC69}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RefillBrasier" ID="{D836E8AF-7380-4B47-B86A-43CD84B0CFEA}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_RefillFire" ID="{B2DDCAB0-0A5D-4EF3-8F32-298484CF5D27}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_BrasierOut" ID="{A662145B-DEE0-4F97-B85F-72599EA4FEA8}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>

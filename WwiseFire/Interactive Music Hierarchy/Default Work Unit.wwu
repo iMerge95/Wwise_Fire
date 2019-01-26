@@ -370,14 +370,6 @@
 						</Entry>
 						<Entry>
 							<Path>
-								<PathElementRef Name="None" ID="{BC34694E-FE5E-4D94-B535-BA8A57136BBD}"/>
-							</Path>
-							<AudioNodeInfo>
-								<NoObject Platform="Linked"/>
-							</AudioNodeInfo>
-						</Entry>
-						<Entry>
-							<Path>
 								<PathElementRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
 							</Path>
 							<AudioNodeInfo>

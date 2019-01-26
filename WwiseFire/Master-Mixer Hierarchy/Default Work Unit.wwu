@@ -32,8 +32,18 @@
 										<FadeCurve>FadeLinear</FadeCurve>
 									</DuckingParam>
 								</DuckItem>
+								<DuckItem>
+									<BusRef Name="SFXPnj" ID="{3ABB02A4-229D-4B38-A765-58B25E93A81C}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>1</FadeInTime>
+										<FadeOutTime>1</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
 							</DuckingList>
 						</Bus>
+						<Bus Name="SFXPnj" ID="{3ABB02A4-229D-4B38-A765-58B25E93A81C}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

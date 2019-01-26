@@ -2078,8 +2078,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Kahi_Work_Axe1" ID="{D34B9DB7-3AAF-4093-BF33-4DF1C5E3B33E}" ShortID="1069443784">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.160087719298246"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="934134707"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2097,6 +2104,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Kahi_Work_Axe2" ID="{A5F36310-4B63-4644-B1B3-BE74764505D3}" ShortID="391547289">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.133774716739766"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe2.wav</AudioFile>
 										</AudioFileSource>
@@ -2116,8 +2126,14 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Kahi_Work_Axe3" ID="{EA447011-3A4E-4270-85A5-C6287C848FF2}" ShortID="761903009">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="5.48257035818713E-03"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="294387532"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2135,6 +2151,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Kahi_Work_Axe4" ID="{07C36B67-872D-4C63-802C-C8D7E68DCAF1}" ShortID="774839878">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="6.14047880116959E-02"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe4.wav</AudioFile>
 										</AudioFileSource>
@@ -2707,6 +2726,814 @@
 								<ActiveSource Name="Kahi_Gele" ID="{EF083CAD-2A77-474F-B454-9567B11BFECC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="SFXPnj" ID="{96AC3D64-C607-4347-8538-4C5D2AA06851}" ShortID="1025053713">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Amb" ID="{B062B731-E2CF-4C8B-B3AD-604B64FAC567}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="PickupWood" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" ShortID="696276329">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D205BDDB-A3E2-4D59-9C0F-F4F01A274BFA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B6EBD394-5B75-4641-A7E4-A3E4F73769A4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="600"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0E1D1616-FA56-4542-812B-B67B7ADC26A0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kahi_Work_PickWood1" ID="{AB422526-9677-49A2-80FC-F1ED6AD01BEC}" ShortID="736441819">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood1" ID="{671785D6-2206-4B8B-BE78-F24CF5F260EE}" ShortID="114851516">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="813357773"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood1" ID="{671785D6-2206-4B8B-BE78-F24CF5F260EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_PickWood2" ID="{7408CE9C-A238-42E5-99AF-05455A99AF3D}" ShortID="503187683">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood2" ID="{A49CE04A-56A1-4459-B1E1-3088EA5886A7}" ShortID="940176732">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="143226283"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood2" ID="{A49CE04A-56A1-4459-B1E1-3088EA5886A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_PickWood3" ID="{D5AA781F-1E54-45A3-9A0B-091790ECA6B9}" ShortID="708388540">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood3" ID="{71A4CC0B-31FD-4B57-8D53-8A9656B1EB5A}" ShortID="691696179">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="464406608"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood3" ID="{71A4CC0B-31FD-4B57-8D53-8A9656B1EB5A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_PickWood4" ID="{91BA2A92-7A7F-41FD-9CE6-0A3E6EC3C51A}" ShortID="275032882">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood4" ID="{6A45EC2A-F700-4F50-82D6-FB038F116E15}" ShortID="157913848">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="257552705"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood4" ID="{6A45EC2A-F700-4F50-82D6-FB038F116E15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_PickWood5" ID="{1E5EBB6D-A0F7-479E-9D43-1B662775610E}" ShortID="1055731053">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood5" ID="{A24C3922-EC9D-48C8-BFC9-253B6E748FE6}" ShortID="984846551">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood5.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="876596184"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood5" ID="{A24C3922-EC9D-48C8-BFC9-253B6E748FE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_PickWood6" ID="{33EF1ADD-6D49-4376-9144-0C3F518245C2}" ShortID="783535048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_PickWood6" ID="{9A5A413D-9A46-402A-8525-0E7026473790}" ShortID="777371924">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_PickWood6.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="701415451"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_PickWood6" ID="{9A5A413D-9A46-402A-8525-0E7026473790}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="CoupeArbre" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" ShortID="138190928">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0DC6D8F9-24E7-464B-8349-F688AEDE48C1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BAF9DBCF-6A25-496A-B73C-43B6B6F7FFA1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="600"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{319A561C-24CC-461A-AB58-0CA4459DC474}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kahi_Work_Axe1" ID="{214DE3F0-8001-45ED-88ED-BDCE3C6CD253}" ShortID="291401992">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_Axe1" ID="{89526B42-48FA-4125-9923-9C166481D278}" ShortID="934134707">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.179824561403509"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_Axe1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1069443784"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_Axe1" ID="{89526B42-48FA-4125-9923-9C166481D278}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_Axe2" ID="{3D6C1E03-27C5-4889-8778-62FB67DD38B0}" ShortID="806648276">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_Axe2" ID="{C8D01BD3-336A-4E5A-A6C0-E7E91ED1A4BA}" ShortID="742288229">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.104168836805556"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_Axe2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_Axe2" ID="{C8D01BD3-336A-4E5A-A6C0-E7E91ED1A4BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_Axe3" ID="{8A84D102-4CB7-4E59-B1A9-443A4F508D18}" ShortID="757058697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_Axe3" ID="{9D9D8214-93FD-49D9-84F6-CDAC4A5D4719}" ShortID="294387532">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_Axe3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="761903009"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_Axe3" ID="{9D9D8214-93FD-49D9-84F6-CDAC4A5D4719}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Work_Axe4" ID="{FF79E52A-C042-4500-8E4B-2775A34B42CD}" ShortID="399110582">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Work_Axe4" ID="{2E831C9A-3049-4AAC-A3BA-1873EE6A8765}" ShortID="809644985">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="5.37291895102339E-02"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kahi_Work_Axe4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Work_Axe4" ID="{2E831C9A-3049-4AAC-A3BA-1873EE6A8765}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Snow" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" ShortID="26077361">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5758F7A3-A2B5-4B98-99B8-4AD8FE277409}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9D0B89A9-E742-43CA-AD6D-E415B46458D4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{34C009FE-7F9F-49EB-B97E-87A167F57FB9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{E237311C-4567-47B2-A902-AAB86BDA624F}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kahi_Footstep_Snow1" ID="{37EE98DC-CC43-4434-942D-2DD7F8EF439E}" ShortID="283700554">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow1" ID="{C156A970-2C1E-40C4-81F4-A9EEB9104D4C}" ShortID="274257755">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="207701490"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow1" ID="{C156A970-2C1E-40C4-81F4-A9EEB9104D4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow10" ID="{5B448D5C-92B5-4318-8230-7D8BBB077C02}" ShortID="603370052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow10" ID="{D3BE1A55-1F96-47CD-9AEB-FDBE4D242CA5}" ShortID="214348917">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow10.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1009217003"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow10" ID="{D3BE1A55-1F96-47CD-9AEB-FDBE4D242CA5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow2" ID="{EDAAA378-B3F7-409C-82EB-65E64CE722B8}" ShortID="243596606">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow2" ID="{82F6A48C-567B-47E7-BCD4-926789A71EBC}" ShortID="786900323">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="671131789"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow2" ID="{82F6A48C-567B-47E7-BCD4-926789A71EBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow3" ID="{0BA5141B-7D1D-4831-9449-27043CCD1704}" ShortID="863734479">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow3" ID="{22450D18-495D-4EAF-8007-B2D6B735E815}" ShortID="589682355">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="357129553"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow3" ID="{22450D18-495D-4EAF-8007-B2D6B735E815}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow4" ID="{8D782490-A531-493F-AF29-A3FBF58C95CF}" ShortID="259933582">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow4" ID="{DAA722D7-5EE6-483D-A33D-1A1CF0AEAEFC}" ShortID="849868891">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="369139444"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow4" ID="{DAA722D7-5EE6-483D-A33D-1A1CF0AEAEFC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow5" ID="{5FB06348-6B6E-4292-AA4D-86AEA882D520}" ShortID="1017349320">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow5" ID="{AA942C2B-EB30-47ED-B554-F2167B1D456A}" ShortID="625671284">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow5.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="71823449"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow5" ID="{AA942C2B-EB30-47ED-B554-F2167B1D456A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow6" ID="{FD3CA402-004A-48BF-AD6B-36AB5E7DD131}" ShortID="937032594">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow6" ID="{EF2D05BB-1E53-4C8F-B5AE-EB63762DCEC5}" ShortID="809406254">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow6.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="774272829"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow6" ID="{EF2D05BB-1E53-4C8F-B5AE-EB63762DCEC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow7" ID="{4BAB935A-8573-4DD0-B509-9635CF062987}" ShortID="288304352">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow7" ID="{FAA1DF3C-9B30-4B53-99C9-B5759C338D11}" ShortID="6950936">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow7.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="197665903"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow7" ID="{FAA1DF3C-9B30-4B53-99C9-B5759C338D11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow8" ID="{AE74482E-47A1-490E-9380-CD41FE6AFC4C}" ShortID="713013130">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow8" ID="{637EBE7C-75FF-4977-AA9C-65E6BCADB942}" ShortID="672288029">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow8.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="537234713"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow8" ID="{637EBE7C-75FF-4977-AA9C-65E6BCADB942}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_Footstep_Snow9" ID="{2E9F45C8-F1E1-4613-AB12-34AF51830F0D}" ShortID="957389761">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_Footstep_Snow9" ID="{8222C95F-B328-4650-84BD-5B3FE0AE45E8}" ShortID="831989087">
+											<Language>SFX</Language>
+											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow9.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="584536258"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_Footstep_Snow9" ID="{8222C95F-B328-4650-84BD-5B3FE0AE45E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RefillFoyer" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" ShortID="104496146">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C734BCEA-BF33-4547-98FD-BD5456B8BD81}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4EE87A49-E2EC-4B71-A73A-C6FFDEF42D7B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="600"/>
+													<Property Name="Min" Type="Real64" Value="-600"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6D5FA0E9-CCA1-4094-8B3A-DDD78150281E}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Kahi_FireFoyer_Refill1" ID="{32299E5E-102E-4D6F-8309-7C5375B3B327}" ShortID="713998858">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireFoyer_Refill1" ID="{3D15391C-9263-4088-A70F-5ADB7A3D6A4D}" ShortID="303439995">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireFoyer_Refill1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="455727630"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireFoyer_Refill1" ID="{3D15391C-9263-4088-A70F-5ADB7A3D6A4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_FireFoyer_Refill2" ID="{3F31206F-4C40-4F42-96E6-E65F1E8A955C}" ShortID="759141938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireFoyer_Refill2" ID="{3D4074D8-5CF5-4053-AC12-C0F76BFACE5D}" ShortID="218">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireFoyer_Refill2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1036408509"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireFoyer_Refill2" ID="{3D4074D8-5CF5-4053-AC12-C0F76BFACE5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_FireFoyer_Refill3" ID="{FDC9B5D7-01E1-40D0-BD8E-98151E09C9D8}" ShortID="444950542">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireFoyer_Refill3" ID="{14D64832-B735-4C40-BB6B-9E8DAB84E764}" ShortID="240789033">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireFoyer_Refill3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="984051162"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireFoyer_Refill3" ID="{14D64832-B735-4C40-BB6B-9E8DAB84E764}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kahi_FireFoyer_Refill4" ID="{C3617840-194B-4359-B993-6067F410BE8F}" ShortID="727678510">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireFoyer_Refill4" ID="{5CDE94E2-75C7-4B58-9290-DEB6D7360D7E}" ShortID="349677523">
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireFoyer_Refill4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="990011824"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireFoyer_Refill4" ID="{5CDE94E2-75C7-4B58-9290-DEB6D7360D7E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

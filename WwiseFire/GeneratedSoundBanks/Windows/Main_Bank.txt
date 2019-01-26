@@ -1,0 +1,116 @@
+Event	ID	Name			Wwise Object Path	Notes
+	191496653	Play_PNJ_RefillFire			\Default Work Unit\Play_PNJ_RefillFire	
+	435770000	Stop_Amb			\Default Work Unit\Stop_Amb	
+	737814230	Play_RefillBrasier			\Default Work Unit\Play_RefillBrasier	
+	764264338	Play_PickWood			\Default Work Unit\Play_PickWood	
+	1004451622	Play_BrasierOut			\Default Work Unit\Play_BrasierOut	
+	1262388170	Play_PNJ_Wood			\Default Work Unit\Play_PNJ_Wood	
+	1359336119	Play_PNJ_Footstep			\Default Work Unit\Play_PNJ_Footstep	
+	1574178725	Play_Wood			\Default Work Unit\Play_Wood	
+	1602358412	Play_Footstep			\Default Work Unit\Play_Footstep	
+	1620508282	Play_RefillFire			\Default Work Unit\Play_RefillFire	
+	1970873953	Play_PickTorch			\Default Work Unit\Play_PickTorch	
+	2526624148	Stop_Fire			\Default Work Unit\Stop_Fire	
+	2658815887	Play_Ice			\Default Work Unit\Play_Ice	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
+	3015324718	Play_Fire			\Default Work Unit\Play_Fire	
+	4261964841	Play_PNJ_PickWood			\Default Work Unit\Play_PNJ_PickWood	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	740779000	FireValue			\Default Work Unit\FireValue	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	40324980	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Silence10s\Wwise Silence	
+	177407615	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Silence5s\Wwise Silence	
+	413555474	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Silence10s\Wwise Silence	
+	413603048	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Silence5s\Wwise Silence	
+	542243094	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Silence5s\Wwise Silence	
+	611465590	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Silence15s\Wwise Silence	
+	633847275	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Silence10s\Wwise Silence	
+	636015926	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Silence15s\Wwise Silence	
+	770109851	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Silence15s\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4983920	Kahi_AmbWind_LightRand5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand5		167876
+	10624826	Kahi_AmbWind_MediumRand4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand4		135300
+	27766875	Kahi_AmbWind_LightRand9	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand9_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand9		151427
+	32169312	Kahi_AmbWind_LightLayer2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightLayer2_97AED4D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentCalme\Kahi_AmbWind_LightLayer2		2415049
+	39985539	Kahi_Work_PickFire3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire3		43942
+	71823449	Kahi_Footstep_Snow5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow5		9606
+	91417666	Kahi_AmbWind_LightRand3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand3		990
+	121704147	Kahi_FireFoyer_LightLayer1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_LightLayer1_D435DC9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\FoyerFire\LightLayer\Kahi_FireFoyer_LightLayer1		6270745
+	143226283	Kahi_Work_PickWood2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood2		28760
+	150003293	Kahi_FireFoyer_MediumLayer	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_MediumLayer_D435DC9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\FoyerFire\MediumLayer\Kahi_FireFoyer_MediumLayer		435851
+	176813351	Kahi_FireBrasier_Out2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Out2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BrasierOut\Kahi_FireBrasier_Out2		34001
+	197665903	Kahi_Footstep_Snow7	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow7_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow7		6386
+	207701490	Kahi_Footstep_Snow1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow1		8700
+	212301977	Kahi_Work_PickFire2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire2		43662
+	222297648	Kahi_FireBrasier_Refill2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Refill2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\RefillBrasier\Kahi_FireBrasier_Refill2		86527
+	231973666	Kahi_FireBrasier_Refill1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Refill1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\RefillBrasier\Kahi_FireBrasier_Refill1		87659
+	235118473	Kahi_AmbWind_LightRand10	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand10_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand10		157237
+	257107657	Kahi_Work_PickFire5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire5		49439
+	257552705	Kahi_Work_PickWood4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood4		24753
+	271643135	Kahi_AmbWind_MediumRand2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand2		44384
+	294190141	Kahi_FireBrasier_Refill3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Refill3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\RefillBrasier\Kahi_FireBrasier_Refill3		82636
+	294387532	Kahi_Work_Axe3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe3_2EDC5658.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe3		31005
+	302882596	Kahi_AmbWind_MediumRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand6		51481
+	314876176	Kahi_AmbWind_LightRand7	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand7_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand7		65230
+	316232551	Kahi_FireBrasier_Out3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Out3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BrasierOut\Kahi_FireBrasier_Out3		39436
+	326523357	Kahi_Work_PickFire6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire6		45192
+	344435917	Kahi_AmbWind_HeavyRand1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand1		121601
+	357129553	Kahi_Footstep_Snow3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow3		8781
+	369139444	Kahi_Footstep_Snow4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow4		14471
+	381322136	Kahi_FireFoyer_LightLayer2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_LightLayer2_D435DC9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\FoyerFire\LightLayer\Kahi_FireFoyer_LightLayer2		768815
+	384021374	Kahi_Work_PickFire4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire4		44768
+	386608076	Kahi_AmbWind_MediumRand8	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand8_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand8		256003
+	391547289	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_F3ED0229.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe2		29932
+	450908890	Kahi_AmbWind_MediumRand5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand5		29046
+	455727630	Kahi_FireFoyer_Refill1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill1		43849
+	460489681	Kahi_AmbWind_HeavyRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand6		111904
+	464406608	Kahi_Work_PickWood3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood3		25652
+	468371743	Kahi_AmbWind_HeavyRand4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand4		98317
+	507648572	Kahi_Work_PickFire1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire1		41804
+	512192038	Kahi_AmbWind_MediumLayer1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumLayer1_BEB57B62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentMoyen\Kahi_AmbWind_MediumLayer1		2420962
+	537067714	Kahi_FireBrasier_Out1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Out1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BrasierOut\Kahi_FireBrasier_Out1		37575
+	537234713	Kahi_Footstep_Snow8	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow8_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow8		15034
+	562789969	Kahi_AmbWind_LightRand2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand2		975
+	562984385	Kahi_AmbWind_LightRand4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand4		914
+	584536258	Kahi_Footstep_Snow9	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow9_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow9		8481
+	589942874	Kahi_AmbWind_HeavyLayer2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyLayer2_41618F6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentFort\Kahi_AmbWind_HeavyLayer2		2512941
+	604097571	Kahi_AmbWind_HeavyLayer3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyLayer3_BACEEEA0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentFort\Kahi_AmbWind_HeavyLayer3		2807319
+	606610134	Kahi_AmbWind_HeavyRand2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand2		110399
+	618245037	Kahi_AmbWind_LightRand1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand1		749
+	640803917	Kahi_FireFoyer_HeavyLayer	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_HeavyLayer_D435DC9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\FoyerFire\HeavyLayer\Kahi_FireFoyer_HeavyLayer		487815
+	665693135	Kahi_AmbWind_MediumRand3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand3		57305
+	667632746	Kahi_AmbWind_MediumRand9	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand9_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand9		246296
+	671131789	Kahi_Footstep_Snow2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow2		7876
+	673437317	Kahi_Musique_02_WIP	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Musique_02_WIP_D435DC9C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Music2\Kahi_Musique_02_WIP\Kahi_Musique_02_WIP		1845005
+	701415451	Kahi_Work_PickWood6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood6		27014
+	722449890	Kahi_Gele	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Gele_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kahi_Gele		110406
+	727597836	Kahi_AmbWind_HeavyRand3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand3		132442
+	742288229	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_5520B4C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe2		28851
+	761903009	Kahi_Work_Axe3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe3		31321
+	774272829	Kahi_Footstep_Snow6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow6		18490
+	774839878	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_1D76C043.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe4		27372
+	779291755	Kahi_AmbWind_LightLayer1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightLayer1_1780F75E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentCalme\Kahi_AmbWind_LightLayer1		2873138
+	809644985	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_2DD4249A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe4		27620
+	813357773	Kahi_Work_PickWood1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood1		25514
+	820437968	Kahi_AmbWind_HeavyRand5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand5		123962
+	849537110	Kahi_Musique_03_WIP	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Musique_03_WIP_D435DC9C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Music3\Kahi_Musique_03_WIP\Kahi_Musique_03_WIP		1953536
+	862196157	Kahi_AmbWind_MediumLayer2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumLayer2_2C18DB88.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentMoyen\Kahi_AmbWind_MediumLayer2		2511640
+	870471275	Kahi_AmbWind_MediumRand1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand1		154301
+	876596184	Kahi_Work_PickWood5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood5		25142
+	884374636	Kahi_AmbWind_LightRand8	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand8_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand8		65079
+	934134707	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_37363572.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe1		25969
+	945560474	Kahi_AmbWind_MediumRand7	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand7_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand7		57960
+	963314281	Kahi_Musique_01_WIP	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Musique_01_WIP_D435DC9C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Music1\Kahi_Musique_01_WIP\Kahi_Musique_01_WIP		1761754
+	968843564	Kahi_AmbWind_LightRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand6		136207
+	981192089	Kahi_AmbWind_HeavyLayer1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyLayer1_06434209.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentFort\Kahi_AmbWind_HeavyLayer1		2392075
+	984051162	Kahi_FireFoyer_Refill3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill3		45579
+	990011824	Kahi_FireFoyer_Refill4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill4		54434
+	1009217003	Kahi_Footstep_Snow10	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow10_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow10		8176
+	1035626638	Kahi_AmbWind_MediumRand10	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand10_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand10		181255
+	1036408509	Kahi_FireFoyer_Refill2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill2		60061
+	1069443784	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_B2899FD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe1		26435
+
