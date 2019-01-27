@@ -38,6 +38,7 @@
 				<Event Id="1574178725" Name="Play_Wood" ObjectPath="\Events\Default Work Unit\Play_Wood"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000"/>
 				<Event Id="2526624148" Name="Stop_Fire" ObjectPath="\Events\Default Work Unit\Stop_Fire" MaxAttenuation="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="4983920" Language="SFX">
@@ -126,7 +127,7 @@
 				</File>
 				<File Id="294387532" Language="SFX">
 					<ShortName>Kahi_Work_Axe3.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe3_2EDC5658.wem</Path>
+					<Path>SFX\Kahi_Work_Axe3_9ADEBDCA.wem</Path>
 				</File>
 				<File Id="302882596" Language="SFX">
 					<ShortName>Kahi_AmbWind_MediumRand6.wav</ShortName>
@@ -170,7 +171,7 @@
 				</File>
 				<File Id="391547289" Language="SFX">
 					<ShortName>Kahi_Work_Axe2.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe2_F3ED0229.wem</Path>
+					<Path>SFX\Kahi_Work_Axe2_202AA447.wem</Path>
 				</File>
 				<File Id="450908890" Language="SFX">
 					<ShortName>Kahi_AmbWind_MediumRand5.wav</ShortName>
@@ -270,7 +271,7 @@
 				</File>
 				<File Id="742288229" Language="SFX">
 					<ShortName>Kahi_Work_Axe2.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe2_5520B4C8.wem</Path>
+					<Path>SFX\Kahi_Work_Axe2_28E41FE9.wem</Path>
 				</File>
 				<File Id="761903009" Language="SFX">
 					<ShortName>Kahi_Work_Axe3.wav</ShortName>
@@ -282,7 +283,7 @@
 				</File>
 				<File Id="774839878" Language="SFX">
 					<ShortName>Kahi_Work_Axe4.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe4_1D76C043.wem</Path>
+					<Path>SFX\Kahi_Work_Axe4_11BFE4C8.wem</Path>
 				</File>
 				<File Id="779291755" Language="SFX">
 					<ShortName>Kahi_AmbWind_LightLayer1.wav</ShortName>
@@ -290,7 +291,7 @@
 				</File>
 				<File Id="809644985" Language="SFX">
 					<ShortName>Kahi_Work_Axe4.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe4_2DD4249A.wem</Path>
+					<Path>SFX\Kahi_Work_Axe4_2FC261E8.wem</Path>
 				</File>
 				<File Id="813357773" Language="SFX">
 					<ShortName>Kahi_Work_PickWood1.wav</ShortName>
@@ -322,7 +323,7 @@
 				</File>
 				<File Id="934134707" Language="SFX">
 					<ShortName>Kahi_Work_Axe1.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe1_37363572.wem</Path>
+					<Path>SFX\Kahi_Work_Axe1_AE95604E.wem</Path>
 				</File>
 				<File Id="945560474" Language="SFX">
 					<ShortName>Kahi_AmbWind_MediumRand7.wav</ShortName>
@@ -362,7 +363,7 @@
 				</File>
 				<File Id="1069443784" Language="SFX">
 					<ShortName>Kahi_Work_Axe1.wav</ShortName>
-					<Path>SFX\Kahi_Work_Axe1_B2899FD2.wem</Path>
+					<Path>SFX\Kahi_Work_Axe1_8B211830.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

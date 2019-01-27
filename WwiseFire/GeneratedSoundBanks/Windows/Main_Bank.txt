@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1970873953	Play_PickTorch			\Default Work Unit\Play_PickTorch	
 	2526624148	Stop_Fire			\Default Work Unit\Stop_Fire	
 	2658815887	Play_Ice			\Default Work Unit\Play_Ice	
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2959533290	Play_Amb			\Default Work Unit\Play_Amb	
 	3015324718	Play_Fire			\Default Work Unit\Play_Fire	
@@ -53,7 +54,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	257552705	Kahi_Work_PickWood4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood4		24753
 	271643135	Kahi_AmbWind_MediumRand2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand2		44384
 	294190141	Kahi_FireBrasier_Refill3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Refill3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\RefillBrasier\Kahi_FireBrasier_Refill3		82636
-	294387532	Kahi_Work_Axe3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe3_2EDC5658.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe3		31005
+	294387532	Kahi_Work_Axe3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe3_9ADEBDCA.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe3		31005
 	302882596	Kahi_AmbWind_MediumRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand6		51481
 	314876176	Kahi_AmbWind_LightRand7	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand7_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand7		65230
 	316232551	Kahi_FireBrasier_Out3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireBrasier_Out3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\BrasierOut\Kahi_FireBrasier_Out3		39436
@@ -64,7 +65,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	381322136	Kahi_FireFoyer_LightLayer2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_LightLayer2_D435DC9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\FoyerFire\LightLayer\Kahi_FireFoyer_LightLayer2		768815
 	384021374	Kahi_Work_PickFire4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickFire4_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupTorch\Kahi_Work_PickFire4		44768
 	386608076	Kahi_AmbWind_MediumRand8	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand8_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand8		256003
-	391547289	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_F3ED0229.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe2		29932
+	391547289	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_202AA447.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe2		29932
 	450908890	Kahi_AmbWind_MediumRand5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand5		29046
 	455727630	Kahi_FireFoyer_Refill1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill1		43849
 	460489681	Kahi_AmbWind_HeavyRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand6		111904
@@ -89,12 +90,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	701415451	Kahi_Work_PickWood6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood6		27014
 	722449890	Kahi_Gele	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Gele_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kahi_Gele		110406
 	727597836	Kahi_AmbWind_HeavyRand3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand3		132442
-	742288229	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_5520B4C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe2		28851
+	742288229	Kahi_Work_Axe2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe2_28E41FE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe2		28851
 	761903009	Kahi_Work_Axe3	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe3_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe3		31321
 	774272829	Kahi_Footstep_Snow6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow6		18490
-	774839878	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_1D76C043.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe4		27372
+	774839878	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_11BFE4C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe4		27372
 	779291755	Kahi_AmbWind_LightLayer1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightLayer1_1780F75E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\VentCalme\Kahi_AmbWind_LightLayer1		2873138
-	809644985	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_2DD4249A.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe4		27620
+	809644985	Kahi_Work_Axe4	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe4_2FC261E8.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe4		27620
 	813357773	Kahi_Work_PickWood1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood1		25514
 	820437968	Kahi_AmbWind_HeavyRand5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_HeavyRand5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventFort\Kahi_AmbWind_HeavyRand5		123962
 	849537110	Kahi_Musique_03_WIP	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Musique_03_WIP_D435DC9C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Music3\Kahi_Musique_03_WIP\Kahi_Musique_03_WIP		1953536
@@ -102,7 +103,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	870471275	Kahi_AmbWind_MediumRand1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand1_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand1		154301
 	876596184	Kahi_Work_PickWood5	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_PickWood5_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PickupWood\Kahi_Work_PickWood5		25142
 	884374636	Kahi_AmbWind_LightRand8	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand8_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand8		65079
-	934134707	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_37363572.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe1		25969
+	934134707	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_AE95604E.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\CoupeArbre\Kahi_Work_Axe1		25969
 	945560474	Kahi_AmbWind_MediumRand7	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand7_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand7		57960
 	963314281	Kahi_Musique_01_WIP	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Musique_01_WIP_D435DC9C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSwitch\Music1\Kahi_Musique_01_WIP\Kahi_Musique_01_WIP		1761754
 	968843564	Kahi_AmbWind_LightRand6	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_LightRand6_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventCalme\Kahi_AmbWind_LightRand6		136207
@@ -112,5 +113,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1009217003	Kahi_Footstep_Snow10	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Footsteps\Snow\Kahi_Footstep_Snow10_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Snow\Kahi_Footstep_Snow10		8176
 	1035626638	Kahi_AmbWind_MediumRand10	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_AmbWind_MediumRand10_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiance\EventMoyen\Kahi_AmbWind_MediumRand10		181255
 	1036408509	Kahi_FireFoyer_Refill2	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_FireFoyer_Refill2_51A8D4C2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\RefillFoyer\Kahi_FireFoyer_Refill2		60061
-	1069443784	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_B2899FD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe1		26435
+	1069443784	Kahi_Work_Axe1	D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Windows\SFX\Kahi_Work_Axe1_8B211830.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFXPnj\CoupeArbre\Kahi_Work_Axe1		26435
 

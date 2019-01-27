@@ -14,6 +14,7 @@
 						<ObjectRef Name="Play_PNJ_Footstep" ID="{2ECF5D4A-D655-45CC-A8E5-AABF7A8F1558}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PickWood" ID="{A0E328F6-3CDF-4655-956E-AA5FB9BF1AAE}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PNJ_RefillFire" ID="{B9372AED-BA26-468C-A5EC-9D13B564D10C}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music" ID="{2FD04D9E-1AE6-46BB-B345-49280EB7EE37}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Fire" ID="{D1085641-F6D3-4781-AB8B-351793A8EA59}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Ice" ID="{0FD2B718-08FA-489A-94F3-340BAFF39B57}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_PNJ_PickWood" ID="{69127423-8F46-49AA-B6E5-4DF317B3DB7D}" WorkUnitID="{6B4B15EE-0064-43DC-890C-D5C458A1DF81}" Filter="7" Origin="Manual"/>
