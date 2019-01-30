@@ -5,9 +5,21 @@
 			<ChildrenList>
 				<Event Name="Play_Amb" ID="{8B9D80C3-2BEB-4A04-9A6B-9D7FEE3B6FA7}">
 					<ChildrenList>
+						<Action Name="" ID="{1ED44A48-3338-4675-AF49-C7354693FFB2}" ShortID="880771872">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VentCalme" ID="{69A236C4-F7B7-409C-863C-2A58A7EB84CA}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{3119CB67-718A-4E48-AA19-59F62E138734}" ShortID="338933955">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -22,6 +34,7 @@
 						<Action Name="" ID="{307952FC-7E9F-4AE1-8EC6-FE517E77B02F}" ShortID="964020889">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -183,7 +196,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PickupWood" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+									<ObjectRef Name="PickupWoodPNJ" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -197,7 +210,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CoupeArbre" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+									<ObjectRef Name="CoupeArbrePNJ" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -211,7 +224,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Snow" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+									<ObjectRef Name="SnowPNJ" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -225,7 +238,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RefillFoyer" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+									<ObjectRef Name="RefillFoyerPNJ" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -236,6 +249,7 @@
 						<Action Name="" ID="{CC453AC0-7C38-487A-908E-C5F4F7B55336}" ShortID="927753766">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -256,6 +270,95 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MusicSwitch" ID="{2D011CB9-9950-4F1C-9833-9FF5E51681A1}" WorkUnitID="{738BC444-E379-4D75-BBAC-0FC71496E55C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_InitLevel" ID="{789965E4-C6F6-4A4B-BDED-41025D0CB4F7}">
+					<ChildrenList>
+						<Action Name="" ID="{3B9E1C4F-D6AE-4507-9ED1-72413F5B6468}" ShortID="378993191">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiance" ID="{33225206-4B8C-48C6-8FAF-0C1C372B30B8}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{001BBB65-3F49-424D-97A1-C12D50E3D5B4}" ShortID="464778379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSwitch" ID="{2D011CB9-9950-4F1C-9833-9FF5E51681A1}" WorkUnitID="{738BC444-E379-4D75-BBAC-0FC71496E55C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{50FFCD99-CC2F-4154-8A03-9035110CC753}" ShortID="14946851">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FoyerFire" ID="{8698E647-05B1-4FBF-BDC6-EE4BF81AB866}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Menu" ID="{97776EF1-4F7B-4103-AADA-4DB133A47048}">
+					<ChildrenList>
+						<Action Name="" ID="{2274DC01-EBB8-4D2E-9FC2-F926BFE1A854}" ShortID="846802967">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VentCalme" ID="{69A236C4-F7B7-409C-863C-2A58A7EB84CA}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_SFX" ID="{F009BD3C-F2D8-4EF8-A864-1DF351E86D73}">
+					<ChildrenList>
+						<Action Name="" ID="{619BF5C7-1789-4889-921F-A6E7B0E8BAB3}" ShortID="48584860">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX" ID="{6CD3B393-A0D7-4654-86CC-D4FCC32031FC}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Cut" ID="{575A1148-6D52-4800-BD06-5CB9C823081B}">
+					<ChildrenList>
+						<Action Name="" ID="{58EBC1AA-0E20-40A1-ADB4-A163E9FF31C3}" ShortID="918358127">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoupeArbre" ID="{CF5A8EB6-A7DB-4B12-AAE4-9E6B52EF8AB3}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E1ED98F8-C157-45AF-942C-B36AD9EF5570}" ShortID="550769862">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CoupeArbrePNJ" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" WorkUnitID="{76E48B79-DC6E-4090-B679-920B0452D3F6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

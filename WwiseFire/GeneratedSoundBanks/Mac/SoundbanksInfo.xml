@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>D:\RepoWwise\Wwise_Fire\WwiseFire\</ProjectRoot>
+		<SourceFilesRoot>D:\RepoWwise\Wwise_Fire\WwiseFire\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\RepoWwise\Wwise_Fire\WwiseFire\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\RepoWwise\Wwise_Fire\WwiseFire\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3989171651" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_Bank</ObjectPath>
+			<ShortName>Main_Bank</ShortName>
+			<Path>Main_Bank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Play_Amb"/>
+				<Event Id="1004451622" Name="Play_BrasierOut" ObjectPath="\Events\Default Work Unit\Play_BrasierOut"/>
+				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire"/>
+				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Play_Footstep"/>
+				<Event Id="2658815887" Name="Play_Ice" ObjectPath="\Events\Default Work Unit\Play_Ice"/>
+				<Event Id="633908326" Name="Play_InitLevel" ObjectPath="\Events\Default Work Unit\Play_InitLevel"/>
+				<Event Id="1278378707" Name="Play_Menu" ObjectPath="\Events\Default Work Unit\Play_Menu"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="1970873953" Name="Play_PickTorch" ObjectPath="\Events\Default Work Unit\Play_PickTorch"/>
+				<Event Id="764264338" Name="Play_PickWood" ObjectPath="\Events\Default Work Unit\Play_PickWood"/>
+				<Event Id="1359336119" Name="Play_PNJ_Footstep" ObjectPath="\Events\Default Work Unit\Play_PNJ_Footstep"/>
+				<Event Id="4261964841" Name="Play_PNJ_PickWood" ObjectPath="\Events\Default Work Unit\Play_PNJ_PickWood"/>
+				<Event Id="191496653" Name="Play_PNJ_RefillFire" ObjectPath="\Events\Default Work Unit\Play_PNJ_RefillFire"/>
+				<Event Id="1262388170" Name="Play_PNJ_Wood" ObjectPath="\Events\Default Work Unit\Play_PNJ_Wood"/>
+				<Event Id="737814230" Name="Play_RefillBrasier" ObjectPath="\Events\Default Work Unit\Play_RefillBrasier"/>
+				<Event Id="1620508282" Name="Play_RefillFire" ObjectPath="\Events\Default Work Unit\Play_RefillFire"/>
+				<Event Id="1574178725" Name="Play_Wood" ObjectPath="\Events\Default Work Unit\Play_Wood"/>
+				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000"/>
+				<Event Id="503277848" Name="Stop_Cut" ObjectPath="\Events\Default Work Unit\Stop_Cut" MaxAttenuation="0.000000"/>
+				<Event Id="2526624148" Name="Stop_Fire" ObjectPath="\Events\Default Work Unit\Stop_Fire" MaxAttenuation="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="287728669" Name="Stop_SFX" ObjectPath="\Events\Default Work Unit\Stop_SFX" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="218" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Refill2.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Refill2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="4983920" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand5.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="6950936" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow7.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow7_51A8D4C2.wem</Path>
+				</File>
+				<File Id="10624826" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand4.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="27766875" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand9.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand9_51A8D4C2.wem</Path>
+				</File>
+				<File Id="32169312" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightLayer2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightLayer2_97AED4D4.wem</Path>
+				</File>
+				<File Id="39985539" Language="SFX">
+					<ShortName>Kahi_Work_PickFire3.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="56510923" Language="SFX">
+					<ShortName>Kahi_FireFoyer_LightLayer1.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_LightLayer1_D435DC9C.wem</Path>
+				</File>
+				<File Id="71823449" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow5.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="91417666" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="114851516" Language="SFX">
+					<ShortName>Kahi_Work_PickWood1.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="143226283" Language="SFX">
+					<ShortName>Kahi_Work_PickWood2.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="150003293" Language="SFX">
+					<ShortName>Kahi_FireFoyer_MediumLayer.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_MediumLayer_D435DC9C.wem</Path>
+				</File>
+				<File Id="157913848" Language="SFX">
+					<ShortName>Kahi_Work_PickWood4.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="176813351" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Out2.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Out2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="207701490" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow1.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="212301977" Language="SFX">
+					<ShortName>Kahi_Work_PickFire2.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="214348917" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow10.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow10_51A8D4C2.wem</Path>
+				</File>
+				<File Id="222297648" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Refill2.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Refill2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="231973666" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Refill1.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Refill1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="235118473" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand10.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand10_51A8D4C2.wem</Path>
+				</File>
+				<File Id="240789033" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Refill3.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Refill3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="257107657" Language="SFX">
+					<ShortName>Kahi_Work_PickFire5.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="271643135" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="282312645" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="294190141" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Refill3.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Refill3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="294387532" Language="SFX">
+					<ShortName>Kahi_Work_Axe3.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="302882596" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand6.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="303439995" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Refill1.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Refill1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="314876176" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand7.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand7_51A8D4C2.wem</Path>
+				</File>
+				<File Id="316232551" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Out3.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Out3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="326523357" Language="SFX">
+					<ShortName>Kahi_Work_PickFire6.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="344435917" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="349677523" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Refill4.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Refill4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="357129553" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow3.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="369139444" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow4.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="381322136" Language="SFX">
+					<ShortName>Kahi_FireFoyer_LightLayer2.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_LightLayer2_D435DC9C.wem</Path>
+				</File>
+				<File Id="384021374" Language="SFX">
+					<ShortName>Kahi_Work_PickFire4.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="386608076" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand8.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand8_51A8D4C2.wem</Path>
+				</File>
+				<File Id="391547289" Language="SFX">
+					<ShortName>Kahi_Work_Axe2.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe2_202AA447.wem</Path>
+				</File>
+				<File Id="395361992" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand5.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="401999279" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer3_5FA5F796.wem</Path>
+				</File>
+				<File Id="446147638" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand7.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand7_51A8D4C2.wem</Path>
+				</File>
+				<File Id="450908890" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand5.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="456691397" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer1_8E7FFC96.wem</Path>
+				</File>
+				<File Id="460489681" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand6.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="464406608" Language="SFX">
+					<ShortName>Kahi_Work_PickWood3.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="468371743" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand4.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="507648572" Language="SFX">
+					<ShortName>Kahi_Work_PickFire1.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickFire1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="512192038" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumLayer1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumLayer1_BEB57B62.wem</Path>
+				</File>
+				<File Id="537067714" Language="SFX">
+					<ShortName>Kahi_FireBrasier_Out1.wav</ShortName>
+					<Path>SFX\Kahi_FireBrasier_Out1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="537234713" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow8.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow8_51A8D4C2.wem</Path>
+				</File>
+				<File Id="562789969" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="562984385" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand4.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="584536258" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow9.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow9_51A8D4C2.wem</Path>
+				</File>
+				<File Id="589942874" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyLayer2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyLayer2_41618F6F.wem</Path>
+				</File>
+				<File Id="604097571" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyLayer3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyLayer3_BACEEEA0.wem</Path>
+				</File>
+				<File Id="606610134" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="612164376" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand6.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="618245037" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="640803917" Language="SFX">
+					<ShortName>Kahi_FireFoyer_HeavyLayer.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_HeavyLayer_D435DC9C.wem</Path>
+				</File>
+				<File Id="665693135" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="667632746" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand9.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand9_51A8D4C2.wem</Path>
+				</File>
+				<File Id="671131789" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow2.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="673437317" Language="SFX">
+					<ShortName>Kahi_Musique_02_WIP.wav</ShortName>
+					<Path>SFX\Kahi_Musique_02_WIP_D435DC9C.wem</Path>
+				</File>
+				<File Id="694291873" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand2_51A8D4C2.wem</Path>
+				</File>
+				<File Id="701415451" Language="SFX">
+					<ShortName>Kahi_Work_PickWood6.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="708344617" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand4.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand4_51A8D4C2.wem</Path>
+				</File>
+				<File Id="722449890" Language="SFX">
+					<ShortName>Kahi_Gele.wav</ShortName>
+					<Path>SFX\Kahi_Gele_51A8D4C2.wem</Path>
+				</File>
+				<File Id="727597836" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="739367621" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="742288229" Language="SFX">
+					<ShortName>Kahi_Work_Axe2.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe2_28E41FE9.wem</Path>
+				</File>
+				<File Id="761903009" Language="SFX">
+					<ShortName>Kahi_Work_Axe3.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe3_9ADEBDCA.wem</Path>
+				</File>
+				<File Id="774272829" Language="SFX">
+					<ShortName>Footsteps\Snow\Kahi_Footstep_Snow6.wav</ShortName>
+					<Path>SFX\Footsteps\Snow\Kahi_Footstep_Snow6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="774839878" Language="SFX">
+					<ShortName>Kahi_Work_Axe4.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe4_11BFE4C8.wem</Path>
+				</File>
+				<File Id="779291755" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightLayer1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightLayer1_1780F75E.wem</Path>
+				</File>
+				<File Id="809644985" Language="SFX">
+					<ShortName>Kahi_Work_Axe4.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe4_2FC261E8.wem</Path>
+				</File>
+				<File Id="820437968" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyRand5.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyRand5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="843703649" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer2_95EF00BD.wem</Path>
+				</File>
+				<File Id="849537110" Language="SFX">
+					<ShortName>Kahi_Musique_03_WIP.wav</ShortName>
+					<Path>SFX\Kahi_Musique_03_WIP_D435DC9C.wem</Path>
+				</File>
+				<File Id="862196157" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumLayer2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumLayer2_2C18DB88.wem</Path>
+				</File>
+				<File Id="870471275" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="876596184" Language="SFX">
+					<ShortName>Kahi_Work_PickWood5.wav</ShortName>
+					<Path>SFX\Kahi_Work_PickWood5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="884374636" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand8.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand8_51A8D4C2.wem</Path>
+				</File>
+				<File Id="934134707" Language="SFX">
+					<ShortName>Kahi_Work_Axe1.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe1_8B211830.wem</Path>
+				</File>
+				<File Id="945560474" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand7.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand7_51A8D4C2.wem</Path>
+				</File>
+				<File Id="957681451" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Dying.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Dying_00C8C9A7.wem</Path>
+				</File>
+				<File Id="963314281" Language="SFX">
+					<ShortName>Kahi_Musique_01_WIP.wav</ShortName>
+					<Path>SFX\Kahi_Musique_01_WIP_D435DC9C.wem</Path>
+				</File>
+				<File Id="968843564" Language="SFX">
+					<ShortName>Kahi_AmbWind_LightRand6.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_LightRand6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="981192089" Language="SFX">
+					<ShortName>Kahi_AmbWind_HeavyLayer1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_HeavyLayer1_06434209.wem</Path>
+				</File>
+				<File Id="1035626638" Language="SFX">
+					<ShortName>Kahi_AmbWind_MediumRand10.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_MediumRand10_51A8D4C2.wem</Path>
+				</File>
+				<File Id="1069443784" Language="SFX">
+					<ShortName>Kahi_Work_Axe1.wav</ShortName>
+					<Path>SFX\Kahi_Work_Axe1_AE95604E.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

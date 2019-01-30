@@ -45,11 +45,12 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}"/>
-							<Value>0</Value>
+							<Value>1.47034192903845E-311</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+						<CurrentStateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
+						<CurrentStateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

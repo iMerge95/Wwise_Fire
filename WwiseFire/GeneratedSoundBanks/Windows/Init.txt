@@ -1,11 +1,17 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1043523140	FireState			\Default Work Unit\FireState	
+	2547608014	BlizzardState			\Default Work Unit\BlizzardState	
 
 State	ID	Name	State Group			Notes
 	0	None	FireState			
 	545371365	Low	FireState			
 	1182670505	Mid	FireState			
 	3550808449	High	FireState			
+	0	None	BlizzardState			
+	545371365	Low	BlizzardState			
+	2849147824	Medium	BlizzardState			
+	3550808449	High	BlizzardState			
+	3610151219	Blizzard	BlizzardState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

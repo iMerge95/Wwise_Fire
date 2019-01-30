@@ -26,6 +26,8 @@
 				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire"/>
 				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\Play_Footstep"/>
 				<Event Id="2658815887" Name="Play_Ice" ObjectPath="\Events\Default Work Unit\Play_Ice"/>
+				<Event Id="633908326" Name="Play_InitLevel" ObjectPath="\Events\Default Work Unit\Play_InitLevel"/>
+				<Event Id="1278378707" Name="Play_Menu" ObjectPath="\Events\Default Work Unit\Play_Menu"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="1970873953" Name="Play_PickTorch" ObjectPath="\Events\Default Work Unit\Play_PickTorch"/>
 				<Event Id="764264338" Name="Play_PickWood" ObjectPath="\Events\Default Work Unit\Play_PickWood"/>
@@ -37,8 +39,10 @@
 				<Event Id="1620508282" Name="Play_RefillFire" ObjectPath="\Events\Default Work Unit\Play_RefillFire"/>
 				<Event Id="1574178725" Name="Play_Wood" ObjectPath="\Events\Default Work Unit\Play_Wood"/>
 				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Stop_Amb" MaxAttenuation="0.000000"/>
+				<Event Id="503277848" Name="Stop_Cut" ObjectPath="\Events\Default Work Unit\Stop_Cut" MaxAttenuation="0.000000"/>
 				<Event Id="2526624148" Name="Stop_Fire" ObjectPath="\Events\Default Work Unit\Stop_Fire" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="287728669" Name="Stop_SFX" ObjectPath="\Events\Default Work Unit\Stop_SFX" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="4983920" Language="SFX">
@@ -121,6 +125,10 @@
 					<ShortName>Kahi_AmbWind_MediumRand2.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_MediumRand2_51A8D4C2.wem</Path>
 				</File>
+				<File Id="282312645" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand3_51A8D4C2.wem</Path>
+				</File>
 				<File Id="294190141" Language="SFX">
 					<ShortName>Kahi_FireBrasier_Refill3.wav</ShortName>
 					<Path>SFX\Kahi_FireBrasier_Refill3_51A8D4C2.wem</Path>
@@ -173,6 +181,18 @@
 					<ShortName>Kahi_Work_Axe2.wav</ShortName>
 					<Path>SFX\Kahi_Work_Axe2_202AA447.wem</Path>
 				</File>
+				<File Id="395361992" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand5.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand5_51A8D4C2.wem</Path>
+				</File>
+				<File Id="401999279" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer3.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer3_5FA5F796.wem</Path>
+				</File>
+				<File Id="446147638" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand7.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand7_51A8D4C2.wem</Path>
+				</File>
 				<File Id="450908890" Language="SFX">
 					<ShortName>Kahi_AmbWind_MediumRand5.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_MediumRand5_51A8D4C2.wem</Path>
@@ -180,6 +200,10 @@
 				<File Id="455727630" Language="SFX">
 					<ShortName>Kahi_FireFoyer_Refill1.wav</ShortName>
 					<Path>SFX\Kahi_FireFoyer_Refill1_51A8D4C2.wem</Path>
+				</File>
+				<File Id="456691397" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer1_8E7FFC96.wem</Path>
 				</File>
 				<File Id="460489681" Language="SFX">
 					<ShortName>Kahi_AmbWind_HeavyRand6.wav</ShortName>
@@ -233,6 +257,10 @@
 					<ShortName>Kahi_AmbWind_HeavyRand2.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_HeavyRand2_51A8D4C2.wem</Path>
 				</File>
+				<File Id="612164376" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand6.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand6_51A8D4C2.wem</Path>
+				</File>
 				<File Id="618245037" Language="SFX">
 					<ShortName>Kahi_AmbWind_LightRand1.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_LightRand1_51A8D4C2.wem</Path>
@@ -257,9 +285,17 @@
 					<ShortName>Kahi_Musique_02_WIP.wav</ShortName>
 					<Path>SFX\Kahi_Musique_02_WIP_D435DC9C.wem</Path>
 				</File>
+				<File Id="694291873" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand2_51A8D4C2.wem</Path>
+				</File>
 				<File Id="701415451" Language="SFX">
 					<ShortName>Kahi_Work_PickWood6.wav</ShortName>
 					<Path>SFX\Kahi_Work_PickWood6_51A8D4C2.wem</Path>
+				</File>
+				<File Id="708344617" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand4.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand4_51A8D4C2.wem</Path>
 				</File>
 				<File Id="722449890" Language="SFX">
 					<ShortName>Kahi_Gele.wav</ShortName>
@@ -268,6 +304,10 @@
 				<File Id="727597836" Language="SFX">
 					<ShortName>Kahi_AmbWind_HeavyRand3.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_HeavyRand3_51A8D4C2.wem</Path>
+				</File>
+				<File Id="739367621" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardRand1.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardRand1_51A8D4C2.wem</Path>
 				</File>
 				<File Id="742288229" Language="SFX">
 					<ShortName>Kahi_Work_Axe2.wav</ShortName>
@@ -301,6 +341,10 @@
 					<ShortName>Kahi_AmbWind_HeavyRand5.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_HeavyRand5_51A8D4C2.wem</Path>
 				</File>
+				<File Id="843703649" Language="SFX">
+					<ShortName>Kahi_AmbWind_BlizzardLayer2.wav</ShortName>
+					<Path>SFX\Kahi_AmbWind_BlizzardLayer2_95EF00BD.wem</Path>
+				</File>
 				<File Id="849537110" Language="SFX">
 					<ShortName>Kahi_Musique_03_WIP.wav</ShortName>
 					<Path>SFX\Kahi_Musique_03_WIP_D435DC9C.wem</Path>
@@ -328,6 +372,10 @@
 				<File Id="945560474" Language="SFX">
 					<ShortName>Kahi_AmbWind_MediumRand7.wav</ShortName>
 					<Path>SFX\Kahi_AmbWind_MediumRand7_51A8D4C2.wem</Path>
+				</File>
+				<File Id="957681451" Language="SFX">
+					<ShortName>Kahi_FireFoyer_Dying.wav</ShortName>
+					<Path>SFX\Kahi_FireFoyer_Dying_00C8C9A7.wem</Path>
 				</File>
 				<File Id="963314281" Language="SFX">
 					<ShortName>Kahi_Musique_01_WIP.wav</ShortName>

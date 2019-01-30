@@ -9,7 +9,25 @@
 						<State Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
 						<State Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
 						<State Name="High" ID="{ABF4027D-8317-414F-9974-9CB00FB7998A}"/>
+						<State Name="Dying" ID="{641B730F-9BBD-4DE6-99C6-0541C2C71F05}"/>
 					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}">
+					<ChildrenList>
+						<State Name="None" ID="{3490856C-A319-4D2A-803C-B63FC5993F78}"/>
+						<State Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+						<State Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+						<State Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+						<State Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{3490856C-A319-4D2A-803C-B63FC5993F78}"/>
+							<EndState Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

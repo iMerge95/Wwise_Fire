@@ -24,12 +24,23 @@
 					<ChildrenList>
 						<BlendContainer Name="Ambiance" ID="{33225206-4B8C-48C6-8FAF-0C1C372B30B8}" ShortID="202360539">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{6BB89BF7-6FF4-4E4B-B988-D19A67AAA865}"/>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -115,6 +126,43 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{6BD870FD-42C6-41C6-BD11-E58D61C60A8D}" ShortID="959477808"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{DDAB6C3B-CB3B-4780-8032-702EA984E3FA}" ShortID="525446896">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{12E56CBF-8BAE-495F-AD53-DBC8F14D91A2}" ShortID="858694926">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{A451B7BA-52E0-454C-A661-F0F18BB8B459}" ShortID="161362564">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
 								<BlendContainer Name="VentBlizzard" ID="{7EA7A32B-6219-4CD9-8C87-01175DE42677}" ShortID="426532515">
 									<ReferenceList>
@@ -126,7 +174,10 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="EventBlizzard" ID="{8B6031C3-CA53-4143-B1FF-A1EBA749C8D5}" ShortID="149293406">
+										<Sound Name="Kahi_AmbWind_BlizzardLayer1" ID="{045989E5-8BBF-43B7-873E-DFCE8D880B24}" ShortID="290879989">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
@@ -135,8 +186,26 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="AmbBlizzard" ID="{3FCF3CB7-4CF5-4634-99D2-9296497B6A82}" ShortID="419134712">
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardLayer1" ID="{9B599C15-98D8-42B8-86BC-B166ED8B459E}" ShortID="456691397">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.12938596491228"/>
+														<Property Name="LoopEnd" Type="Real64" Value="101.531798245614"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardLayer1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardLayer1" ID="{9B599C15-98D8-42B8-86BC-B166ED8B459E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardLayer2" ID="{4D1F2632-E145-43FC-B73A-5D7C9B8F8646}" ShortID="1072404875">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
@@ -145,8 +214,88 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
 												</Reference>
 											</ReferenceList>
-										</RandomSequenceContainer>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardLayer2" ID="{C1ED1A42-3A01-4C5D-80ED-F46FA83B4F0A}" ShortID="843703649">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.97368421052632"/>
+														<Property Name="LoopEnd" Type="Real64" Value="118.815789473684"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardLayer2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardLayer2" ID="{C1ED1A42-3A01-4C5D-80ED-F46FA83B4F0A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardLayer3" ID="{06A0ACB5-0E9D-47A5-9563-B18BD496E9CB}" ShortID="441765686">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardLayer3" ID="{8B4FE52A-5654-41F1-88AE-32759C68072D}" ShortID="401999279">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.2280701754386"/>
+														<Property Name="LoopEnd" Type="Real64" Value="76.6666666666667"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardLayer3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardLayer3" ID="{8B4FE52A-5654-41F1-88AE-32759C68072D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{446B19A0-472F-47AD-8D38-1850F1EA9682}" ShortID="304643808">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{B6FFCFE3-2BB1-4BD6-8F10-C5AE7A27FCB5}" ShortID="271415183">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{FA079A82-0770-45C9-9A87-B5443E3C108A}" ShortID="391443575">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{F5671104-9D74-4F15-82DC-FE4BCDA62485}" ShortID="671223873"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
 								<BlendContainer Name="VentCalme" ID="{69A236C4-F7B7-409C-863C-2A58A7EB84CA}" ShortID="631317677">
 									<PropertyList>
@@ -250,10 +399,52 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{37DFB509-2C4F-4BF1-97E9-B29FF58BDDB6}" ShortID="515476275">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{07D63022-ACF7-46E5-95CB-415EBD3AE704}" ShortID="733562104"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{698CFF1F-4D1C-4597-83C9-A4AF552AD711}" ShortID="996721275">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{6B09DC9C-BAFE-474E-A219-39414D8D2032}" ShortID="952094975">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
 								<BlendContainer Name="VentFort" ID="{EBA0CB94-0897-4E1D-9833-4376552A234B}" ShortID="920398396">
 									<PropertyList>
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -349,507 +540,44 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{F408C48C-364B-4154-B2C1-76852A05FD97}" ShortID="316119419">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{459433AC-BA93-41F3-88FF-E04EF0802C37}" ShortID="1062844550">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{C384A11E-7AD8-426E-AD21-845E285B4176}" ShortID="165384560"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{C1E7137B-DF46-4153-872A-7B0C2B9E398A}" ShortID="655053747">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
-								<RandomSequenceContainer Name="EventMoyen" ID="{E671AC74-D712-4420-A0B6-67796148BBEF}" ShortID="666413064">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{7E47FC8E-81A5-42AE-AC5C-DE0991437C1A}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-300"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Silence10s" ID="{E9446B65-4D8D-413C-9C7B-3442B878372C}" ShortID="391777203">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{B840D1BA-578B-4D41-936D-FFB14D482B2E}" ShortID="40324980" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="10"/>
-														<Property Name="LengthMax" Type="Real32" Value="2"/>
-														<Property Name="LengthMin" Type="Real32" Value="-2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{B840D1BA-578B-4D41-936D-FFB14D482B2E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence15s" ID="{FCE9B9E4-C824-4381-BE63-0A1E0EA3EA08}" ShortID="807688975">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{E4DEB421-B6F6-4E2E-9787-D6CB20E0CE3D}" ShortID="770109851" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="15"/>
-														<Property Name="LengthMax" Type="Real32" Value="4"/>
-														<Property Name="LengthMin" Type="Real32" Value="-4"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{E4DEB421-B6F6-4E2E-9787-D6CB20E0CE3D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence5s" ID="{0E5D594A-1D29-4C72-A274-8ECEB342AD91}" ShortID="11210005">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{F2BDC1D2-60ED-47C7-B480-0BD894FBDC11}" ShortID="413603048" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="5"/>
-														<Property Name="LengthMax" Type="Real32" Value="1"/>
-														<Property Name="LengthMin" Type="Real32" Value="-1"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{F2BDC1D2-60ED-47C7-B480-0BD894FBDC11}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand6" ID="{1336A6E5-9FC0-4682-B067-60BCD185BF09}" ShortID="867593749">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand6" ID="{0FA845A1-C464-46E7-BCAA-998C04BE1D4C}" ShortID="302882596">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand6.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand6" ID="{0FA845A1-C464-46E7-BCAA-998C04BE1D4C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand10" ID="{3E661336-0887-46BB-927F-F214A89827E3}" ShortID="463466909">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand10" ID="{105BCF10-0441-4888-9808-B90399AD8CC6}" ShortID="1035626638">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand10.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand10" ID="{105BCF10-0441-4888-9808-B90399AD8CC6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand1" ID="{F26431E6-E990-47FD-8FD2-EFA51FCFC536}" ShortID="644776524">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand1" ID="{6FD89648-838D-40E2-B561-3F72B4797352}" ShortID="870471275">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand1" ID="{6FD89648-838D-40E2-B561-3F72B4797352}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand4" ID="{E7C949CD-51C0-43A5-A65E-5C5DB647E8E6}" ShortID="516068097">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand4" ID="{2D1A66F8-DA71-483B-AD74-D26DCC21E097}" ShortID="10624826">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand4.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand4" ID="{2D1A66F8-DA71-483B-AD74-D26DCC21E097}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand5" ID="{2A00B214-F8C5-4A4B-A1CF-FDEE2E9FCAFC}" ShortID="821750841">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand5" ID="{8A3984F9-4B59-4A32-8783-0FF1EBF7262F}" ShortID="450908890">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand5.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand5" ID="{8A3984F9-4B59-4A32-8783-0FF1EBF7262F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand7" ID="{74160FB5-4F33-4967-BCF0-E9612F1A6B25}" ShortID="241552490">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand7" ID="{8B34D2F4-336F-4319-89FE-C4C6E6095830}" ShortID="945560474">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand7.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand7" ID="{8B34D2F4-336F-4319-89FE-C4C6E6095830}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand8" ID="{B31C5EE2-7419-481E-917D-2A1F8919DA81}" ShortID="503423741">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand8" ID="{B6779D37-289F-49F1-B1E2-F91B4987E517}" ShortID="386608076">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand8.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand8" ID="{B6779D37-289F-49F1-B1E2-F91B4987E517}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand9" ID="{1B4793B1-3825-45AB-B63D-83097FC5FBC8}" ShortID="394265703">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand9" ID="{E46C26A5-C393-4875-96E9-FB319556E9EF}" ShortID="667632746">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand9.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand9" ID="{E46C26A5-C393-4875-96E9-FB319556E9EF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand2" ID="{B3990598-3B3D-4165-82E4-D035A3E8993B}" ShortID="462240126">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand2" ID="{F130A6C3-E991-42EC-BC76-DC2199FBF615}" ShortID="271643135">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand2.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand2" ID="{F130A6C3-E991-42EC-BC76-DC2199FBF615}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_MediumRand3" ID="{213B4566-9771-4EF8-AEB1-90AC9D5041A1}" ShortID="825912126">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_MediumRand3" ID="{01E0C7E5-5980-47B0-8CEC-320E8484C3F5}" ShortID="665693135">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_MediumRand3.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_MediumRand3" ID="{01E0C7E5-5980-47B0-8CEC-320E8484C3F5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="EventFort" ID="{0E5E31C7-28CF-464B-AFCA-165486D32A6A}" ShortID="65822252">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{0C24ABF4-343B-4C6C-9740-2CB77FBDF174}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-300"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Silence10s" ID="{68A2214B-9441-4375-810B-785E72B51123}" ShortID="807272150">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{441FD345-21C4-45DB-90F0-161B48BFF322}" ShortID="413555474" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="10"/>
-														<Property Name="LengthMax" Type="Real32" Value="2"/>
-														<Property Name="LengthMin" Type="Real32" Value="-2"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{441FD345-21C4-45DB-90F0-161B48BFF322}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence15s" ID="{77F948C6-50D3-4E69-90D7-DE62DFF5EB3B}" ShortID="205130175">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{BD3C867B-0BA0-4D5E-9A34-07FF3869C15A}" ShortID="636015926" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="15"/>
-														<Property Name="LengthMax" Type="Real32" Value="4"/>
-														<Property Name="LengthMin" Type="Real32" Value="-4"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{BD3C867B-0BA0-4D5E-9A34-07FF3869C15A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Silence5s" ID="{DD877980-CB18-4372-8708-B464331D1809}" ShortID="196721054">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<SourcePlugin Name="Wwise Silence" ID="{3B6CBE59-524D-473A-8816-FD6B1F012228}" ShortID="177407615" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
-													<PropertyList>
-														<Property Name="Length" Type="Real32" Value="5"/>
-														<Property Name="LengthMax" Type="Real32" Value="1"/>
-														<Property Name="LengthMin" Type="Real32" Value="-1"/>
-													</PropertyList>
-													<Language>SFX</Language>
-												</SourcePlugin>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wwise Silence" ID="{3B6CBE59-524D-473A-8816-FD6B1F012228}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand2" ID="{06A62255-12CA-498B-B643-9355A5E9CF90}" ShortID="188292323">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand2" ID="{904EE911-1DEA-4E9E-959B-6C34165E3045}" ShortID="606610134">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand2.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand2" ID="{904EE911-1DEA-4E9E-959B-6C34165E3045}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand6" ID="{6EDC7002-0E1B-4377-AA4D-871F9F39B733}" ShortID="148023335">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand6" ID="{66FE3C25-5D94-41FD-9094-51C3039C58CF}" ShortID="460489681">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand6.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand6" ID="{66FE3C25-5D94-41FD-9094-51C3039C58CF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand3" ID="{1F513D4D-8751-47C4-B190-956C89813A95}" ShortID="102170370">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand3" ID="{DF0C02C4-534A-4214-91BD-5216573FA5C0}" ShortID="727597836">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand3.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand3" ID="{DF0C02C4-534A-4214-91BD-5216573FA5C0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand4" ID="{E92A0354-4722-416A-9990-2EEB0032F0B3}" ShortID="923748573">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand4" ID="{6441321E-9200-42FA-92F7-E4540F15BB23}" ShortID="468371743">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand4.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand4" ID="{6441321E-9200-42FA-92F7-E4540F15BB23}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand5" ID="{F74421C7-871A-4EA3-BF9F-B66879F6CF81}" ShortID="279166200">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand5" ID="{80CAEB36-10B2-40E6-A475-44E66631DFA5}" ShortID="820437968">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand5.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand5" ID="{80CAEB36-10B2-40E6-A475-44E66631DFA5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Kahi_AmbWind_HeavyRand1" ID="{67CC207A-FACE-421F-8C3B-36C1F41E3718}" ShortID="850167651">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Kahi_AmbWind_HeavyRand1" ID="{0CD79335-A080-4EC5-BCEC-15F408DCC4AC}" ShortID="344435917">
-													<Language>SFX</Language>
-													<AudioFile>Kahi_AmbWind_HeavyRand1.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Kahi_AmbWind_HeavyRand1" ID="{0CD79335-A080-4EC5-BCEC-15F408DCC4AC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="EventCalme" ID="{0644A627-E1D8-4839-8452-1460A2D2E24A}" ShortID="763297681">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
@@ -873,7 +601,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+											<ObjectRef Name="Amb" ID="{B062B731-E2CF-4C8B-B3AD-604B64FAC567}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1137,90 +865,909 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{D73AE251-6EA9-4E50-8EB5-FF07A9D23EA8}" ShortID="322906650">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{166EB292-5571-404F-AB72-2BBBC155A4A7}" ShortID="1036633831"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{FC41EBFE-650C-428E-9291-EB9D006D062A}" ShortID="959104432">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{147650E7-87ED-4561-A8B6-06E6B04A7974}" ShortID="899083559">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="EventFort" ID="{0E5E31C7-28CF-464B-AFCA-165486D32A6A}" ShortID="65822252">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0C24ABF4-343B-4C6C-9740-2CB77FBDF174}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{B062B731-E2CF-4C8B-B3AD-604B64FAC567}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Silence10s" ID="{68A2214B-9441-4375-810B-785E72B51123}" ShortID="807272150">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{441FD345-21C4-45DB-90F0-161B48BFF322}" ShortID="413555474" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="10"/>
+														<Property Name="LengthMax" Type="Real32" Value="2"/>
+														<Property Name="LengthMin" Type="Real32" Value="-2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{441FD345-21C4-45DB-90F0-161B48BFF322}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence15s" ID="{77F948C6-50D3-4E69-90D7-DE62DFF5EB3B}" ShortID="205130175">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{BD3C867B-0BA0-4D5E-9A34-07FF3869C15A}" ShortID="636015926" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="15"/>
+														<Property Name="LengthMax" Type="Real32" Value="4"/>
+														<Property Name="LengthMin" Type="Real32" Value="-4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{BD3C867B-0BA0-4D5E-9A34-07FF3869C15A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence5s" ID="{DD877980-CB18-4372-8708-B464331D1809}" ShortID="196721054">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{3B6CBE59-524D-473A-8816-FD6B1F012228}" ShortID="177407615" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="5"/>
+														<Property Name="LengthMax" Type="Real32" Value="1"/>
+														<Property Name="LengthMin" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{3B6CBE59-524D-473A-8816-FD6B1F012228}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand2" ID="{06A62255-12CA-498B-B643-9355A5E9CF90}" ShortID="188292323">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand2" ID="{904EE911-1DEA-4E9E-959B-6C34165E3045}" ShortID="606610134">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand2" ID="{904EE911-1DEA-4E9E-959B-6C34165E3045}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand6" ID="{6EDC7002-0E1B-4377-AA4D-871F9F39B733}" ShortID="148023335">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand6" ID="{66FE3C25-5D94-41FD-9094-51C3039C58CF}" ShortID="460489681">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand6" ID="{66FE3C25-5D94-41FD-9094-51C3039C58CF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand3" ID="{1F513D4D-8751-47C4-B190-956C89813A95}" ShortID="102170370">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand3" ID="{DF0C02C4-534A-4214-91BD-5216573FA5C0}" ShortID="727597836">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand3" ID="{DF0C02C4-534A-4214-91BD-5216573FA5C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand4" ID="{E92A0354-4722-416A-9990-2EEB0032F0B3}" ShortID="923748573">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand4" ID="{6441321E-9200-42FA-92F7-E4540F15BB23}" ShortID="468371743">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand4" ID="{6441321E-9200-42FA-92F7-E4540F15BB23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand5" ID="{F74421C7-871A-4EA3-BF9F-B66879F6CF81}" ShortID="279166200">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand5" ID="{80CAEB36-10B2-40E6-A475-44E66631DFA5}" ShortID="820437968">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand5" ID="{80CAEB36-10B2-40E6-A475-44E66631DFA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_HeavyRand1" ID="{67CC207A-FACE-421F-8C3B-36C1F41E3718}" ShortID="850167651">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_HeavyRand1" ID="{0CD79335-A080-4EC5-BCEC-15F408DCC4AC}" ShortID="344435917">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_HeavyRand1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_HeavyRand1" ID="{0CD79335-A080-4EC5-BCEC-15F408DCC4AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{8B7EC28A-904F-4502-990D-8FA9CD7BCFA7}" ShortID="518927162">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{3A84D081-6F1C-4B0E-806A-EE57B5909D42}" ShortID="701105015">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{C1886C4B-B54E-46CF-A815-0D1BF34FFE57}" ShortID="405449959"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{46950075-4BA6-46FC-8FB6-2F36D19D66F5}" ShortID="281928739">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-3"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="EventMoyen" ID="{E671AC74-D712-4420-A0B6-67796148BBEF}" ShortID="666413064">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7E47FC8E-81A5-42AE-AC5C-DE0991437C1A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{B062B731-E2CF-4C8B-B3AD-604B64FAC567}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Silence10s" ID="{E9446B65-4D8D-413C-9C7B-3442B878372C}" ShortID="391777203">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{B840D1BA-578B-4D41-936D-FFB14D482B2E}" ShortID="40324980" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="10"/>
+														<Property Name="LengthMax" Type="Real32" Value="2"/>
+														<Property Name="LengthMin" Type="Real32" Value="-2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{B840D1BA-578B-4D41-936D-FFB14D482B2E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence15s" ID="{FCE9B9E4-C824-4381-BE63-0A1E0EA3EA08}" ShortID="807688975">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{E4DEB421-B6F6-4E2E-9787-D6CB20E0CE3D}" ShortID="770109851" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="15"/>
+														<Property Name="LengthMax" Type="Real32" Value="4"/>
+														<Property Name="LengthMin" Type="Real32" Value="-4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{E4DEB421-B6F6-4E2E-9787-D6CB20E0CE3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence5s" ID="{0E5D594A-1D29-4C72-A274-8ECEB342AD91}" ShortID="11210005">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{F2BDC1D2-60ED-47C7-B480-0BD894FBDC11}" ShortID="413603048" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="5"/>
+														<Property Name="LengthMax" Type="Real32" Value="1"/>
+														<Property Name="LengthMin" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{F2BDC1D2-60ED-47C7-B480-0BD894FBDC11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand6" ID="{1336A6E5-9FC0-4682-B067-60BCD185BF09}" ShortID="867593749">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand6" ID="{0FA845A1-C464-46E7-BCAA-998C04BE1D4C}" ShortID="302882596">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand6" ID="{0FA845A1-C464-46E7-BCAA-998C04BE1D4C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand10" ID="{3E661336-0887-46BB-927F-F214A89827E3}" ShortID="463466909">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand10" ID="{105BCF10-0441-4888-9808-B90399AD8CC6}" ShortID="1035626638">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand10" ID="{105BCF10-0441-4888-9808-B90399AD8CC6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand1" ID="{F26431E6-E990-47FD-8FD2-EFA51FCFC536}" ShortID="644776524">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand1" ID="{6FD89648-838D-40E2-B561-3F72B4797352}" ShortID="870471275">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand1" ID="{6FD89648-838D-40E2-B561-3F72B4797352}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand4" ID="{E7C949CD-51C0-43A5-A65E-5C5DB647E8E6}" ShortID="516068097">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand4" ID="{2D1A66F8-DA71-483B-AD74-D26DCC21E097}" ShortID="10624826">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand4" ID="{2D1A66F8-DA71-483B-AD74-D26DCC21E097}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand5" ID="{2A00B214-F8C5-4A4B-A1CF-FDEE2E9FCAFC}" ShortID="821750841">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand5" ID="{8A3984F9-4B59-4A32-8783-0FF1EBF7262F}" ShortID="450908890">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand5" ID="{8A3984F9-4B59-4A32-8783-0FF1EBF7262F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand7" ID="{74160FB5-4F33-4967-BCF0-E9612F1A6B25}" ShortID="241552490">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand7" ID="{8B34D2F4-336F-4319-89FE-C4C6E6095830}" ShortID="945560474">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand7" ID="{8B34D2F4-336F-4319-89FE-C4C6E6095830}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand8" ID="{B31C5EE2-7419-481E-917D-2A1F8919DA81}" ShortID="503423741">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand8" ID="{B6779D37-289F-49F1-B1E2-F91B4987E517}" ShortID="386608076">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand8" ID="{B6779D37-289F-49F1-B1E2-F91B4987E517}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand9" ID="{1B4793B1-3825-45AB-B63D-83097FC5FBC8}" ShortID="394265703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand9" ID="{E46C26A5-C393-4875-96E9-FB319556E9EF}" ShortID="667632746">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand9.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand9" ID="{E46C26A5-C393-4875-96E9-FB319556E9EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand2" ID="{B3990598-3B3D-4165-82E4-D035A3E8993B}" ShortID="462240126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand2" ID="{F130A6C3-E991-42EC-BC76-DC2199FBF615}" ShortID="271643135">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand2" ID="{F130A6C3-E991-42EC-BC76-DC2199FBF615}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_MediumRand3" ID="{213B4566-9771-4EF8-AEB1-90AC9D5041A1}" ShortID="825912126">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_MediumRand3" ID="{01E0C7E5-5980-47B0-8CEC-320E8484C3F5}" ShortID="665693135">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_MediumRand3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_MediumRand3" ID="{01E0C7E5-5980-47B0-8CEC-320E8484C3F5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{2E8BE8C8-110F-494B-9ADE-757CA59EC5BD}" ShortID="505299215"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{3A656B19-3957-4BA2-A86A-78B49B2C0569}" ShortID="220384908">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{53DB5709-2BC5-4AD1-A836-23A8E14AC629}" ShortID="99265008">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-6"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{03CB9A3B-5C90-4A6A-B419-2FED869D0666}" ShortID="137682651">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="EventBlizzard" ID="{8B6031C3-CA53-4143-B1FF-A1EBA749C8D5}" ShortID="149293406">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{B062B731-E2CF-4C8B-B3AD-604B64FAC567}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Kahi_AmbWind_BlizzardRand1" ID="{444AA2A8-65BD-4007-8001-AA3D6906CD5F}" ShortID="851553122">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand1" ID="{6A28FD2C-13D4-438E-8789-400999B04881}" ShortID="739367621">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand1" ID="{6A28FD2C-13D4-438E-8789-400999B04881}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand2" ID="{D8B5846B-2189-4909-A35F-6E8AD5BC3836}" ShortID="112526518">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand2" ID="{8208DBF5-DB9D-415A-8697-D5993DA7FC3A}" ShortID="694291873">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand2" ID="{8208DBF5-DB9D-415A-8697-D5993DA7FC3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand3" ID="{6D84BA41-7B25-415E-9AB1-9EE72E4BA566}" ShortID="122992517">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand3" ID="{1AFAB18B-7444-4B69-8925-AA1A90A60DD1}" ShortID="282312645">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand3" ID="{1AFAB18B-7444-4B69-8925-AA1A90A60DD1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand4" ID="{96F39462-65F3-4033-88C6-493FDB18B69B}" ShortID="924152024">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand4" ID="{B2FA126D-4B71-4B24-B73D-88A8B2D1EFDC}" ShortID="708344617">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand4" ID="{B2FA126D-4B71-4B24-B73D-88A8B2D1EFDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand5" ID="{1E6E8A33-0FDD-4CEF-848D-885562B0866D}" ShortID="556953301">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand5" ID="{F8617771-F6C6-40A0-AF5A-DC5F57BEA3FA}" ShortID="395361992">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand5" ID="{F8617771-F6C6-40A0-AF5A-DC5F57BEA3FA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand6" ID="{58C4BCB4-376F-4174-ABB0-F756E09830FA}" ShortID="206890038">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand6" ID="{23D0DDD2-6AB5-4B16-87AA-3350316ED65F}" ShortID="612164376">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand6" ID="{23D0DDD2-6AB5-4B16-87AA-3350316ED65F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Kahi_AmbWind_BlizzardRand7" ID="{0393E66C-876B-412B-9E0A-C67668FC6CF9}" ShortID="175885014">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Kahi_AmbWind_BlizzardRand7" ID="{4882D847-42D0-4603-AD6B-0C0BD6ED838D}" ShortID="446147638">
+													<Language>SFX</Language>
+													<AudioFile>Kahi_AmbWind_BlizzardRand7.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Kahi_AmbWind_BlizzardRand7" ID="{4882D847-42D0-4603-AD6B-0C0BD6ED838D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence10s" ID="{46759FE4-367E-4FB2-B72E-29D628AD9712}" ShortID="497894563">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{329CA758-E310-475D-8075-69097D856587}" ShortID="308165849" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="10"/>
+														<Property Name="LengthMax" Type="Real32" Value="2"/>
+														<Property Name="LengthMin" Type="Real32" Value="-2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{329CA758-E310-475D-8075-69097D856587}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence5s" ID="{5217756F-3B59-4C1F-8E3B-5BE2F57C774D}" ShortID="252693144">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{C2E55DFF-A4FD-4C20-B09B-0FFA90C36C5D}" ShortID="909132164" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="5"/>
+														<Property Name="LengthMax" Type="Real32" Value="1"/>
+														<Property Name="LengthMin" Type="Real32" Value="-1"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{C2E55DFF-A4FD-4C20-B09B-0FFA90C36C5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence15s" ID="{4A1B854A-9E42-4D88-8037-E60B92393D3F}" ShortID="440363567">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{01E54493-3A6E-471F-A093-430BDF94AD19}" ShortID="82928507" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="15"/>
+														<Property Name="LengthMax" Type="Real32" Value="4"/>
+														<Property Name="LengthMin" Type="Real32" Value="-4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{01E54493-3A6E-471F-A093-430BDF94AD19}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+												<State Name="" ID="{3218B571-AAE3-455D-A0AB-112FEE6B9C51}" ShortID="175558471">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+												<State Name="" ID="{E4A82A00-B5A2-4A2B-A745-E315DE3C5509}" ShortID="587041312">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+												<State Name="" ID="{79B53F53-B0EA-413B-AFCB-A5BE06AE1FE1}" ShortID="460841580">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+												<State Name="" ID="{847A8FBD-78C8-4445-866B-EE4077A684F9}" ShortID="1004424928"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="Ambiance" ID="{5522EC42-11FF-4B9B-BD1C-C7E58B43360D}" ShortID="555888501">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}" WorkUnitID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="VentCalme" ID="{69A236C4-F7B7-409C-863C-2A58A7EB84CA}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>40.7068062827225</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="VentMoyen" ID="{DE1BFD37-36D1-4DC5-8DC9-7F47F575167E}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>9.81675392670154</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>89.8560209424084</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="VentFort" ID="{EBA0CB94-0897-4E1D-9833-4376552A234B}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>49.6204188481675</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>100</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="Event" ID="{1ADD7271-D7A2-42D2-BA5D-206839442FD0}" ShortID="172549285">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}" WorkUnitID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="EventCalme" ID="{0644A627-E1D8-4839-8452-1460A2D2E24A}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>39.5590868237347</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="EventMoyen" ID="{E671AC74-D712-4420-A0B6-67796148BBEF}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>9.68586387434555</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>89.8778359511344</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="EventFort" ID="{0E5E31C7-28CF-464B-AFCA-165486D32A6A}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>50.087260034904</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>100</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="BlizzardState" ID="{BFA66F15-4EA1-4D11-B31E-D62E832768C7}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Medium" ID="{2A02E2E7-35E1-4102-A9B1-D0F67EF80653}"/>
+										<State Name="" ID="{F76C1144-CC29-4C5C-8B88-98990245A514}" ShortID="848215629"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+										<State Name="" ID="{B44E0E6E-4365-4497-A646-1CCF43DADD64}" ShortID="706778886"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="High" ID="{7A86C596-A8CC-46EA-AE76-3D9CD0798082}"/>
+										<State Name="" ID="{508E2336-3E90-4837-B2D9-0ADD323337CD}" ShortID="364642392"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
+										<State Name="" ID="{02F8A81D-0840-43B8-9DC1-9A87F9441B7F}" ShortID="875959619"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</BlendContainer>
 						<BlendContainer Name="FoyerFire" ID="{8698E647-05B1-4FBF-BDC6-EE4BF81AB866}" ShortID="312279067">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
@@ -1279,7 +1826,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Kahi_FireFoyer_LightLayer1.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="121704147"/>
+														<File Platform="Android" ID="56510923"/>
+														<File Platform="Mac" ID="56510923"/>
+														<File Platform="Windows" ID="121704147"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1288,6 +1837,43 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="FireState" ID="{E23E1404-7874-4951-A37F-C0C0B92887D4}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="High" ID="{ABF4027D-8317-414F-9974-9CB00FB7998A}"/>
+												<State Name="" ID="{47A6ABA6-C2B6-4818-9BEC-913ACEE6456D}" ShortID="298684105">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
+												<State Name="" ID="{52C8BDA4-0752-4742-B5AA-E8C1244EDC53}" ShortID="1049019356">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+												<State Name="" ID="{0506425A-6C3B-491A-BD48-3F89538CB06B}" ShortID="109606120"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Dying" ID="{641B730F-9BBD-4DE6-99C6-0541C2C71F05}"/>
+												<State Name="" ID="{F548B11D-FF31-4D7A-9BE5-E65467C85854}" ShortID="433443442">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
 								<BlendContainer Name="MediumLayer" ID="{E6642BEA-68DF-449D-8E39-C1B83FEEFCAF}" ShortID="661362998">
 									<ReferenceList>
@@ -1362,6 +1948,10 @@
 												<AudioFileSource Name="Kahi_FireFoyer_LightLayer1" ID="{63E42803-EF85-4650-9363-A96D667E7AE1}" ShortID="121704147">
 													<Language>SFX</Language>
 													<AudioFile>Kahi_FireFoyer_LightLayer1.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File Platform="Android" ID="56510923"/>
+														<File Platform="Mac" ID="56510923"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1369,6 +1959,43 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="FireState" ID="{E23E1404-7874-4951-A37F-C0C0B92887D4}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="High" ID="{ABF4027D-8317-414F-9974-9CB00FB7998A}"/>
+												<State Name="" ID="{ED8D6B4F-BB34-4978-907C-94F3DA689147}" ShortID="127529225">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
+												<State Name="" ID="{9C69CE78-EBD5-416C-887A-9BCBCC635FA6}" ShortID="223451683"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+												<State Name="" ID="{D70FDBFF-DC60-4B07-9AEA-CAE210584831}" ShortID="968590838">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Dying" ID="{641B730F-9BBD-4DE6-99C6-0541C2C71F05}"/>
+												<State Name="" ID="{67AAE338-CAC8-4DC8-A09B-28F8768B34D4}" ShortID="964122781">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
 								<BlendContainer Name="HeavyLayer" ID="{51071872-ABF5-4B06-A46A-02424670D2C6}" ShortID="665995223">
 									<ReferenceList>
@@ -1469,7 +2096,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Kahi_FireFoyer_LightLayer1.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="121704147"/>
+														<File Platform="Windows" ID="121704147"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1478,49 +2105,110 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="FireState" ID="{E23E1404-7874-4951-A37F-C0C0B92887D4}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="High" ID="{ABF4027D-8317-414F-9974-9CB00FB7998A}"/>
+												<State Name="" ID="{A0C1B558-0B6A-4E28-B4D6-426B42903BE9}" ShortID="415421058"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
+												<State Name="" ID="{D878E79E-7D49-42C8-A0E7-0F5CBDE9B185}" ShortID="391639748">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+												<State Name="" ID="{CCD3D751-3829-433E-9C78-54AE2AE3D992}" ShortID="333002000">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Dying" ID="{641B730F-9BBD-4DE6-99C6-0541C2C71F05}"/>
+												<State Name="" ID="{DD24A0D6-84FF-4DFA-95FE-C9B1955CE024}" ShortID="528541755">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 								</BlendContainer>
-							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="FoyerFire" ID="{C4677858-9889-4AF2-804A-9FBC65943876}" ShortID="748235785">
+								<Sound Name="DyingLayer" ID="{20522020-A4D4-4DE0-BA0B-8ABD4A2BA4C3}" ShortID="354571584">
 									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="FireValue" ID="{31B64118-5EF6-4A02-838E-A28181F7869F}" WorkUnitID="{F721EDCA-ED9D-4EBB-B949-74445DD42487}"/>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{64DFD474-8435-4046-AC3E-35EDCBF99FCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{63A7FEF2-4A52-4CFC-B00A-5DA990600F70}"/>
 										</Reference>
 									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="LightLayer" ID="{EF355CEB-F5C0-4B2D-9BF6-D71B97AD22BD}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>40.0914980366492</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="MediumLayer" ID="{E6642BEA-68DF-449D-8E39-C1B83FEEFCAF}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>19.5814018324607</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>80.4190981675393</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="HeavyLayer" ID="{51071872-ABF5-4B06-A46A-02424670D2C6}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>60.000375</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>100</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
+									<ChildrenList>
+										<AudioFileSource Name="Kahi_FireFoyer_Dying" ID="{A5C4270D-E7E5-49A9-BCF5-43281E7AF6CC}" ShortID="957681451">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2000"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.03070175438596"/>
+												<Property Name="LoopEnd" Type="Real64" Value="18.9035087719298"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Kahi_FireFoyer_Dying.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="FireState" ID="{E23E1404-7874-4951-A37F-C0C0B92887D4}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="High" ID="{ABF4027D-8317-414F-9974-9CB00FB7998A}"/>
+												<State Name="" ID="{7DFBC3BD-3FF2-4B30-99F7-D9C665657272}" ShortID="541707958">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
+												<State Name="" ID="{810C01CC-3B98-4498-B7E2-287C55CDC4BB}" ShortID="195904269">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+												<State Name="" ID="{3EF7A2C2-6DF4-4354-9476-F6358CFE2D77}" ShortID="213534493">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</State>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Dying" ID="{641B730F-9BBD-4DE6-99C6-0541C2C71F05}"/>
+												<State Name="" ID="{5517D010-DCCE-458D-B1CB-BE4629B0CC35}" ShortID="609446612"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Kahi_FireFoyer_Dying" ID="{A5C4270D-E7E5-49A9-BCF5-43281E7AF6CC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -1644,6 +2332,10 @@
 										<AudioFileSource Name="Kahi_Work_PickWood1" ID="{EE490774-03CC-41A7-9048-878EAA04FB3F}" ShortID="813357773">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_PickWood1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="114851516"/>
+												<File Platform="Mac" ID="114851516"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1701,6 +2393,10 @@
 										<AudioFileSource Name="Kahi_Work_PickWood4" ID="{B93882E3-8D3F-4880-82DC-689041C59FCE}" ShortID="257552705">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_PickWood4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="157913848"/>
+												<File Platform="Mac" ID="157913848"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1941,6 +2637,10 @@
 										<AudioFileSource Name="Kahi_FireFoyer_Refill1" ID="{D9FF06CD-4FEB-477D-B92C-EF3A26559B0B}" ShortID="455727630">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill1.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="303439995"/>
+												<File Platform="Mac" ID="303439995"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1960,6 +2660,10 @@
 										<AudioFileSource Name="Kahi_FireFoyer_Refill2" ID="{B8D30AE5-B68A-46E9-8F41-23712AFF470F}" ShortID="1036408509">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill2.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="218"/>
+												<File Platform="Mac" ID="218"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1979,6 +2683,10 @@
 										<AudioFileSource Name="Kahi_FireFoyer_Refill3" ID="{8E2146FD-1C1C-44BE-BCE4-F692CA9DC61E}" ShortID="984051162">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill3.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="240789033"/>
+												<File Platform="Mac" ID="240789033"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -1998,6 +2706,10 @@
 										<AudioFileSource Name="Kahi_FireFoyer_Refill4" ID="{3C5FCDB7-8EB5-41F0-8254-BBCCFFB21085}" ShortID="990011824">
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill4.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="349677523"/>
+												<File Platform="Mac" ID="349677523"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2039,6 +2751,8 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -2085,7 +2799,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe1.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="934134707"/>
+												<File Platform="Windows" ID="934134707"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2132,7 +2846,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe3.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="294387532"/>
+												<File Platform="Windows" ID="294387532"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2383,7 +3097,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>2</Value>
+										<Value>6</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -2438,6 +3152,10 @@
 										<AudioFileSource Name="Kahi_Footstep_Snow10" ID="{8800A5AF-6B32-4D68-A53E-2A77AFF814FF}" ShortID="1009217003">
 											<Language>SFX</Language>
 											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow10.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="214348917"/>
+												<File Platform="Mac" ID="214348917"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2552,6 +3270,10 @@
 										<AudioFileSource Name="Kahi_Footstep_Snow7" ID="{61F2D1F5-F33F-4C72-AF6C-6A7106A3A443}" ShortID="197665903">
 											<Language>SFX</Language>
 											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow7.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File Platform="Android" ID="6950936"/>
+												<File Platform="Mac" ID="6950936"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2737,7 +3459,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2750,7 +3472,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="PickupWood" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" ShortID="696276329">
+						<RandomSequenceContainer Name="PickupWoodPNJ" ID="{309C97E3-D073-4633-9B72-7D9E312DDC25}" ShortID="696276329">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
@@ -2825,7 +3547,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_PickWood1.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="813357773"/>
+												<File Platform="Windows" ID="813357773"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2891,7 +3613,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_PickWood4.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="257552705"/>
+												<File Platform="Windows" ID="257552705"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -2945,7 +3667,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="CoupeArbre" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" ShortID="138190928">
+						<RandomSequenceContainer Name="CoupeArbrePNJ" ID="{9AA5AB42-FA5C-4941-B6AE-5704E2E53026}" ShortID="138190928">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
@@ -2978,6 +3700,8 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -3023,7 +3747,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe1.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="1069443784"/>
+												<File Platform="Windows" ID="1069443784"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3067,7 +3791,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_Work_Axe3.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="761903009"/>
+												<File Platform="Windows" ID="761903009"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3099,7 +3823,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Snow" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" ShortID="26077361">
+						<RandomSequenceContainer Name="SnowPNJ" ID="{16194BCE-F679-4942-8F8D-E64ED63C93FD}" ShortID="26077361">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
@@ -3197,7 +3921,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow10.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="1009217003"/>
+												<File Platform="Windows" ID="1009217003"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3329,7 +4053,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Footsteps\Snow\Kahi_Footstep_Snow7.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="197665903"/>
+												<File Platform="Windows" ID="197665903"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3383,7 +4107,7 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="RefillFoyer" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" ShortID="104496146">
+						<RandomSequenceContainer Name="RefillFoyerPNJ" ID="{20456F96-2FBB-4BA2-86B6-801F8F245BBB}" ShortID="104496146">
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ModifierList>
@@ -3458,7 +4182,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill1.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="455727630"/>
+												<File Platform="Windows" ID="455727630"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3480,7 +4204,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill2.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="1036408509"/>
+												<File Platform="Windows" ID="1036408509"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3502,7 +4226,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill3.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="984051162"/>
+												<File Platform="Windows" ID="984051162"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -3524,7 +4248,7 @@
 											<Language>SFX</Language>
 											<AudioFile>Kahi_FireFoyer_Refill4.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="990011824"/>
+												<File Platform="Windows" ID="990011824"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
