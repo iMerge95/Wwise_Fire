@@ -49,8 +49,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Mid" ID="{C000BDBA-63CD-4C2A-AD0D-029D256A9C18}"/>
-						<CurrentStateRef Name="Low" ID="{2632AC8D-726C-45F9-9570-CAB0206E68C3}"/>
+						<CurrentStateRef Name="Low" ID="{5754DC12-4477-4D12-B418-3644448FB33E}"/>
+						<CurrentStateRef Name="Blizzard" ID="{7E499DA8-4C9D-4C0E-82ED-C19066859D14}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
